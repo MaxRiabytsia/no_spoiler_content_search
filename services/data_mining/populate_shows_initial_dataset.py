@@ -1,5 +1,5 @@
 from shows_api import ShowsAPI
-from database_query_manager import DatabaseQueryManager
+from database import Database
 
 
 NUMBER_OF_SHOWS_WITH_INFO = 10_000
@@ -25,8 +25,8 @@ def main():
     data = get_n_most_popular_show_info(api, NUMBER_OF_SHOWS_WITH_INFO)
     data += get_n_most_popular_show_info(api, NUMBER_OF_SHOWS_WITH_NAME_ONLY, name_only=True)
 
-    dqm = DatabaseQueryManager()
-    dqm.write_shows_data(data)
+    db = Database()
+    db.write("show", data, "insert", "internal_id")
 
 
 if __name__ == "__main__":
