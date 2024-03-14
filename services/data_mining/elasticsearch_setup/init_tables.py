@@ -35,8 +35,8 @@ episode_mapping = {
             "description": {"type": "text", "index": False},  # Disable analysis for description field
             "air_date": {"type": "date"},
             "next_episode_air_date": {"type": "date", "null_value": None},
-            "created_at": {"type": "date"},
-            "updated_at": {"type": "date"}
+            "created_at": {"type": "date", "index": False},  # Disable analysis for the field
+            "updated_at": {"type": "date", "index": False},  # Disable analysis for the field
         }
     }
 }
@@ -54,8 +54,18 @@ content_mapping = {
             "view_count": {"type": "integer"},
             "like_count": {"type": "integer"},
             "published_date": {"type": "date"},
-            "created_at": {"type": "date"},
-            "updated_at": {"type": "date"}
+            "created_at": {"type": "date", "index": False},  # Disable analysis for the field
+            "updated_at": {"type": "date", "index": False},  # Disable analysis for the field
+        }
+    }
+}
+
+pipeline_mapping = {
+    "mappings": {
+        "properties": {
+            "id": {"type": "keyword"},
+            "name": {"type": "keyword"},
+            "last_run_timestamp": {"type": "date", "index": False},  # Disable analysis for the field
         }
     }
 }
@@ -64,3 +74,4 @@ content_mapping = {
 es.indices.create(index="show", body=show_mapping)
 es.indices.create(index="episode", body=episode_mapping)
 es.indices.create(index="content", body=content_mapping)
+es.indices.create(index="pipeline", body=pipeline_mapping)

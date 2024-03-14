@@ -1,6 +1,7 @@
 from tvdb_v4_official import TVDB
 import os
 import pandas as pd
+from datetime import datetime
 
 
 class ShowsAPI:
@@ -13,6 +14,10 @@ class ShowsAPI:
 
     def get_show_by_id(self, show_id: int) -> dict:
         return self._tvdb.get_series(show_id)
+
+    def get_updates_since_timestamp(self, timestamp: datetime) -> list[dict]:
+        since = int(timestamp.timestamp())
+        return self._tvdb.get_updates(since=since, type="series", action="update")
 
     def get_n_most_popular_shows(self, n: int) -> list[int]:
         df = pd.read_csv("initial_data/shows.csv", encoding="utf-8")
