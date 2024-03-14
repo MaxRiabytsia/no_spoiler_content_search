@@ -11,9 +11,10 @@ def main():
     api = ShowsAPI()
     db = Database()
 
+    # TODO: use https://thetvdb.github.io/v4-api/#/Updates/updates
     ids = get_airing_show_ids(db)
     for show_id in ids:
-        show_info = api.get_show_info(show_id)
+        show_info = api.get_show_by_id(show_id)
         db.write("show", show_info, "upsert", "internal_id")
 
 

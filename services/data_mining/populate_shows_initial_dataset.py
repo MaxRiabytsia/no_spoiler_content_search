@@ -1,21 +1,35 @@
+import json
+
 from shows_api import ShowsAPI
 from database import Database
 
-
-NUMBER_OF_SHOWS_WITH_INFO = 10_000
-NUMBER_OF_SHOWS_WITH_NAME_ONLY = 1_000_000
+NUMBER_OF_SHOWS_WITH_INFO = 1_000
+NUMBER_OF_SHOWS_WITH_NAME_ONLY = 50_000
 
 
 def get_n_most_popular_show_info(api, n, name_only=False):
     data = []
-    for show_id in api.get_n_most_popular_show_ids(n):
+    for i, show_name in enumerate(api.get_n_most_popular_shows(n)):
         if name_only:
-            show_name = api.get_show_name(show_id)
-            show_info = {"id": show_id, "name": show_name}
+            show_info = {"name": show_name}
+            if show_info:
+                data.append(show_info)
         else:
-            show_info = api.get_show_info(show_id)
+            show_info = api.search(show_name)
+            if show_info:
+                show_info = show_info[0]
+                data.append({
+                    'internal_id': show_info['id'],
+                    'title': show_info['name'],
+                    'description': show_info['overview'],
+                    'poster_url': show_info['image_url'],
+                    'is_airing': show_info['status'] == 'Continuing',  # TODO: Check if this is correct
+                })
 
-        data.append(show_info)
+        if i % 100 == 0:
+            print(f"Processed {i} shows")
+            with open("initial_data/shows_data.json", "w") as f:
+                json.dump(data, f, indent=2)
 
     return data
 
