@@ -27,7 +27,7 @@ def main():
             show_data = api.get_show_by_id(show["recordId"])
             updated_data.append(show_data)
 
-    db.write("show", updated_data, "upsert", "internal_id")
+    db.write("show", updated_data)
 
 
 if __name__ == "__main__":

@@ -28,7 +28,7 @@ def main():
                                    max_release_date=episode['next_episode_air_date'],
                                    limit=NUMBER_OF_VIDEOS_TO_COLLECT)
         videos["episode_id"] = episode["id"]
-        db.write("content", videos, "insert", "internal_id")
+        db.write("content", videos)
 
 
 if __name__ == "__main__":

@@ -59,7 +59,7 @@ def main():
                                        max_release_date=episode['next_episode_air_date'],
                                        limit=50)
             videos["episode_id"] = episode["id"]
-            db.write("content", videos, "insert", "internal_id")
+            db.write("content", videos)
 
 
 if __name__ == "__main__":

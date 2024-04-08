@@ -40,7 +40,7 @@ def main():
     data += get_n_most_popular_show_info(api, NUMBER_OF_SHOWS_WITH_NAME_ONLY, name_only=True)
 
     db = Database()
-    db.write("show", data, "insert", "internal_id")
+    db.write("show", data)
 
 
 if __name__ == "__main__":
