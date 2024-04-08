@@ -5,7 +5,7 @@ services:
   backend:
     build: ./services/backend
     ports:
-      - 5000:5000
+      - "5000:5000"
     environment:
       - DATABASE_URL=postgres://hello_fastapi:hello_fastapi@db:5432/hello_fastapi_dev
     volumes:
@@ -20,7 +20,7 @@ services:
       - './services/frontend:/app'
       - '/app/node_modules'
     ports:
-      - 8080:8080
+      - "8080:8080"
 
   db:
     image: postgres:15.1
