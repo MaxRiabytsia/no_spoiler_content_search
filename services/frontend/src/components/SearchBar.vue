@@ -1,13 +1,18 @@
 <script setup>
-import { ref } from "vue";
+import { ref, defineEmits } from "vue";
 
-const search_query = ref("");
+const emit = defineEmits(["search"]);
+const searchQuery = ref('');
+
+const search = () => {
+  emit('search', searchQuery.value);
+}
 </script>
 
 <template>
   <div class="input-wrap">
-    <input type="text" v-model="search_query" />
-    <button>Search</button>
+    <input type="text" v-model="searchQuery" @keydown.enter="search" />
+    <button @click="search">Search</button>
   </div>
 </template>
 
