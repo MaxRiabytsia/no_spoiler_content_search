@@ -6,11 +6,12 @@ import { RouterLink } from "vue-router";
   <header>
     <nav class="container">
       <div class="branding">
-        <img src="@/assets/logo.png" alt="" />
-        <h1>Relive The Experience</h1>
+        <RouterLink :to="{ name: 'search' }">
+          <img src="@/assets/logo.png" alt="" />
+        </RouterLink>
       </div>
       <ul class="nav-routes">
-        <RouterLink :to="{ name: 'search' }">Search</RouterLink>
+        <RouterLink :to="{ name: 'episodes' }">Episodes (temp)</RouterLink>
         <RouterLink :to="{ name: 'about' }">About</RouterLink>
       </ul>
     </nav>
@@ -19,17 +20,21 @@ import { RouterLink } from "vue-router";
 
 <style lang="scss" scoped>
 header {
-  background-color: #312D40;
-  color: #7AAE80;
+  font-size: 24px;
+  background-color: #222222;
+  color: #FFFFFF;
+  border-bottom: 2px solid #666666;
+
   nav {
     display: flex;
     align-items: center;
-    padding: 25px 16px;
+    padding: 16px;
 
     .branding {
       display: flex;
       align-items: center;
       gap: 8px;
+
       img {
         max-width: 50px;
       }

@@ -16,12 +16,11 @@ import AppHeader from "./components/AppHeader.vue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ECECEC;
-  background: #17151E;
+  color: #FFFFFF;
+  background: #222222;
 }
 
 body {
-  background: #17151E;
+  background: #222222;
 }
-
 </style>
