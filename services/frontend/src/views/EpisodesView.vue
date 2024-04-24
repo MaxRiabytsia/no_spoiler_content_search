@@ -91,7 +91,7 @@ export default {
         <p>{{ showData.description }}</p>
       </div>
     </div>
-    <h3>What was the last episode you have seen?</h3>
+    <h1>What was the last episode you have seen?</h1>
     <div class="last-episode">
       <div class="dropdown-container">
         <select v-model="selectedSeason" @change="fetchEpisodes" class="season-dropdown">

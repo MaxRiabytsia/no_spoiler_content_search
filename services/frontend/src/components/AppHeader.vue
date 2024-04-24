@@ -12,6 +12,8 @@ import { RouterLink } from "vue-router";
       </div>
       <ul class="nav-routes">
         <RouterLink :to="{ name: 'episodes' }">Episodes (temp)</RouterLink>
+        <RouterLink :to="{ name: 'content_search' }">Content search (temp)</RouterLink>
+        <RouterLink :to="{ name: 'content_results' }">Content results (temp)</RouterLink>
         <RouterLink :to="{ name: 'about' }">About</RouterLink>
       </ul>
     </nav>

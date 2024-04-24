@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineEmits } from "vue";
+import { ref, defineEmits, computed } from "vue";
 
 const emit = defineEmits(["search"]);
 const searchQuery = ref('');
@@ -7,11 +7,23 @@ const searchQuery = ref('');
 const search = () => {
   emit('search', searchQuery.value);
 }
+
+const clearSearch = () => {
+  searchQuery.value = '';
+}
+
+const showClearButton = computed(() => {
+  return searchQuery.value.length > 0;
+});
 </script>
 
 <template>
   <div class="search-bar">
     <input type="text" v-model="searchQuery" @keydown.enter="search" placeholder="Search" />
+    <button v-if="showClearButton" @click="clearSearch" class="clear-button">
+      <img src="@/assets/clear-icon.png" alt="Clear icon" />
+    </button>
+    <div class="separator" v-if="showClearButton"></div>
     <button @click="search" class="search-button">
       <img src="@/assets/search-icon.png" alt="Search icon" />
     </button>
@@ -47,6 +59,25 @@ const search = () => {
         color: transparent;
       }
     }
+  }
+
+  .clear-button {
+    padding: 12px;
+    background-color: #222222;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .separator {
+    width: 1px;
+    height: 24px;
+    background-color: #666666;
+    margin: 0 8px;
   }
 
   .search-button {
