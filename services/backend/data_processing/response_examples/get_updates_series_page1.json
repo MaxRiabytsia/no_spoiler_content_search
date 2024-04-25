@@ -1,0 +1,5002 @@
+[
+  {
+    "recordType": "",
+    "recordId": 438354,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241268,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 315616,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241324,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 357500,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241339,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442628,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241401,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442628,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241401,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444690,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241402,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272472,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241416,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444692,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241494,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 413033,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241568,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 382823,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241604,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 399658,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241627,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444691,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241696,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444691,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241701,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444692,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241701,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272472,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241730,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429720,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241821,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 419879,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241888,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 425295,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705241980,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272472,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242001,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 425295,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242001,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371495,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242065,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 410000,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242222,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78792,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242262,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 382883,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242265,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 413662,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242302,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 307928,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242368,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 437304,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242435,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 434863,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242488,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242495,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272472,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242506,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 340451,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242545,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242739,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 420069,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242831,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272472,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242957,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705242958,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 331181,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243025,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 269533,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243035,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 302218,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243257,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 269533,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243261,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 256590,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243364,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 315908,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243426,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243433,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243465,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339203,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243504,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243517,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243521,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444188,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243720,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243804,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243824,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 320011,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243826,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 302218,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243840,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339203,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705243860,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 440439,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244021,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430863,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244088,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244115,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 420018,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244122,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 302218,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244129,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 320011,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244134,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339203,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244201,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 70869,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244220,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444693,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244233,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 411325,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244350,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 302218,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244478,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424673,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244499,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 370488,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244504,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 427993,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244633,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 427993,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244671,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 402092,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244715,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244748,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244829,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 75886,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244872,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 338807,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244960,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 411959,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705244990,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 322332,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245023,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 302106,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245037,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 410000,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245053,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 395741,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245062,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 434568,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245066,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424357,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245075,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245101,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 372342,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245151,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428620,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245152,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444694,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245231,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 438060,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245273,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 395741,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245301,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 371626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245302,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 290853,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245323,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 437360,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245333,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417420,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245516,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 79824,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245517,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 387115,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245520,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417420,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245644,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 401425,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245705,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 380010,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245794,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444694,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245822,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 226391,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245856,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78276,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245869,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442119,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245912,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 284040,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705245919,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421837,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246028,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 74438,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246092,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 312461,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246104,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 303323,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246138,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 281342,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246165,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 82008,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246225,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428672,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246238,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 435005,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246245,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 298075,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246375,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 346657,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246400,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429771,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246409,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 97871,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246449,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428672,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246527,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246599,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421837,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246656,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 394706,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246712,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 400573,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246730,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 395884,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246791,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444694,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246791,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246815,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444695,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246867,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444694,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246900,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428672,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705246981,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444622,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247022,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429772,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247025,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 420069,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247098,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 400573,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247100,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78899,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247103,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428234,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247117,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 435005,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247163,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247168,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 420018,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247171,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444695,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247205,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444622,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247250,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 303323,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247330,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430693,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247395,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78899,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247430,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247433,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404604,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247465,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 281342,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247466,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430693,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247493,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 72746,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247521,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373989,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247565,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444695,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247626,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444696,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247654,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 436829,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247664,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444693,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247664,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 368899,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247728,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443549,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247736,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442532,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247740,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 397057,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247752,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444696,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247792,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444695,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247811,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 438702,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247817,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247832,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421387,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247888,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444697,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247905,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 348005,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247937,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 438975,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247952,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 413865,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247977,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 400187,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705247986,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78899,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248000,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 438975,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248002,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78899,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248003,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444698,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248004,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 413865,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248005,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248025,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 306246,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248084,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 359220,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248112,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 341785,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248173,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 304308,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248201,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421387,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248209,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442393,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248218,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444266,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248257,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 341784,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248283,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 407436,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248308,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444698,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248309,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 79515,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248319,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444265,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248330,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 391080,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248340,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 389240,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248342,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248346,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421387,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248389,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443549,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248406,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 377345,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248410,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444696,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248427,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 376436,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248456,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443606,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248476,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248490,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 308406,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248529,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 369055,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248529,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444699,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248579,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248606,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429772,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248609,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 369055,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248613,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 440949,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248617,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421855,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248619,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 341262,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248622,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 387541,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248658,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248662,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 325465,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248697,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444469,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248706,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 340771,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248740,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 353462,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248750,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 406052,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248770,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444700,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248776,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 109331,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248801,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 179091,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248842,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 72494,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248853,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 343864,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248855,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444700,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248904,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431545,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248905,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 179091,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248906,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 72494,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248907,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 306221,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248923,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 397749,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248926,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 440949,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248933,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 345481,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248966,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 390267,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248967,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 292192,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705248987,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444701,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249030,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 391612,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249068,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 350382,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249120,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249137,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 83503,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249168,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 72494,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249217,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 340771,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249247,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444701,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249293,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443181,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249327,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 378074,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249396,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 405458,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249449,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 281405,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249451,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444699,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249502,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 78804,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249527,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444700,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249527,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 439084,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249554,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 407044,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249584,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 354721,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249604,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 437855,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249667,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 412561,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249682,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 431162,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249783,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444702,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249792,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 379766,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249877,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249890,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 156121,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249918,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 402607,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705249994,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339824,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250075,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 379766,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250101,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339824,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250116,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 402607,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250118,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 433403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250127,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388406,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250150,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444702,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250152,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250161,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424583,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250245,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 354721,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250254,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 129801,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250270,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 394593,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250324,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444703,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250360,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444332,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250405,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 373373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250451,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421495,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250467,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250508,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 427503,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250568,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 400573,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250580,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424437,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250585,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 435005,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250604,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 439753,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250624,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 355456,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250641,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250663,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421855,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250672,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 427503,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250737,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421855,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250738,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444703,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250742,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 416493,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250784,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442473,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250784,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250818,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421495,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250826,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 374252,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250874,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442374,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250894,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444332,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250950,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 352205,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705250992,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251002,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 352205,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251015,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 374252,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251025,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444704,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251032,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 399731,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251053,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444332,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251055,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 402607,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251068,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 422413,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251114,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 363252,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251120,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 435034,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251131,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 71219,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251177,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444266,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251227,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442374,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251231,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443165,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251232,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 361419,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251236,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 364147,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251241,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 435689,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251261,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 202421,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251282,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 384577,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251295,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251302,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 202421,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251316,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334149,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251316,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417373,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251336,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 420200,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251368,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 419466,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251381,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 419379,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251409,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 351818,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251434,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 418949,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251490,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442374,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251566,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444324,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251675,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251679,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421737,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251774,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429276,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251788,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 77075,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251859,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 77075,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251913,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339575,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251941,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 418949,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705251972,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 255192,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252020,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 434225,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252056,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 270262,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252084,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252119,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 337284,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252160,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388150,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252171,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 77072,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252193,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 270633,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252197,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 70366,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252232,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 289574,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252233,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 434225,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252237,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 270261,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252254,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443181,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252314,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430693,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252330,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252410,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252426,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 423781,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252429,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 239851,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252456,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 290388,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252466,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430596,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252475,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428234,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252494,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 76808,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252497,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 76808,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252502,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 428234,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252513,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339575,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252514,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 71998,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252537,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252571,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 284596,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252609,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 433717,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252614,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 361594,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252649,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417419,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252655,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252656,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 387287,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252718,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 135211,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252760,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 281626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252773,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 339575,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252806,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252810,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 281626,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252823,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417419,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252827,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 322721,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252845,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 353546,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252848,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252858,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444680,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252858,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 425498,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705252953,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 282870,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253139,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 433403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253148,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 423920,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253173,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 410824,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253290,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 441968,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253335,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424966,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253383,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443565,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253387,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 417419,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253434,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 442814,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253458,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 341633,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253484,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 439806,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253515,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 388171,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253554,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 397193,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253592,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 389662,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253594,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 290686,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253631,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 267440,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253696,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 290686,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253720,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 267440,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253723,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 341633,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253738,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 353546,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253764,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253774,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253837,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 184871,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253852,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 422129,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253873,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 395259,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253883,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 340438,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253925,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 393623,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253953,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 378395,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253954,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 282821,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705253982,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 282821,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254009,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 422129,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254114,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254124,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 378395,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254135,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 340438,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254148,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 317935,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254150,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 161871,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254228,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254270,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254323,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 430130,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254358,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254378,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 317935,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254380,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421855,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254505,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 284138,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254521,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254558,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 392209,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254564,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254605,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 405032,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254612,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254623,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 392209,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254632,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 284138,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254685,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 405920,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254720,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444705,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254751,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334301,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254830,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 84859,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254873,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254906,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254911,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 429054,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254936,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 73141,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254968,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 251589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705254972,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 400573,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255001,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 382883,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255010,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 262098,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255036,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 161871,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255079,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255088,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 280810,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255130,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 330174,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255149,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 84859,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255180,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 161871,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255210,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 73141,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255217,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255245,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 330174,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255255,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 274453,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255262,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 372399,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255271,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 262098,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255332,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 251589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255439,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334245,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255442,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272565,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255451,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255504,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 372399,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255507,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 402607,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255566,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 427819,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255593,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 251589,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255607,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 272565,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255625,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 330174,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255638,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255860,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424966,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255865,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334245,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705255867,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 425256,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256054,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256141,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421737,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256166,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 218851,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256207,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 270633,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256342,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424673,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256353,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 422035,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256441,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 410380,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256487,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81727,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256526,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 303252,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256625,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 265258,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256648,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 419936,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256663,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 265258,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256720,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 421837,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256863,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 390615,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256883,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 389597,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256892,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 357792,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256932,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 175701,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256934,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444706,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705256958,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 331431,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257087,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 71470,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257140,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 346657,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257250,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444707,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257286,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444707,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257311,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 440213,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257382,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444708,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257431,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444709,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257642,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 363652,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257886,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443523,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257893,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 306269,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257896,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 443523,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257901,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 81797,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257922,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444708,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257925,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 363652,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705257960,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 422598,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258031,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334301,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258072,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 377837,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258134,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258203,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334301,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258212,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 363652,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258258,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 444708,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258282,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 377837,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258312,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334301,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258558,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424966,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258683,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258722,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 440372,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258782,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 424966,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258810,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 363652,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258831,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 334301,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258863,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 329882,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258868,
+    "entityType": "series"
+  },
+  {
+    "recordType": "",
+    "recordId": 404403,
+    "methodInt": 2,
+    "method": "update",
+    "extraInfo": "",
+    "userId": 0,
+    "timeStamp": 1705258896,
+    "entityType": "series"
+  }
+]

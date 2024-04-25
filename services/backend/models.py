@@ -20,7 +20,8 @@ class Episode(BaseModel):
     name: str
     show_id: int
     season: int
-    number: int
+    number_in_season: int
+    number_in_show: int
     is_last_of_the_season: bool
     is_last_of_the_show: bool
     description: str
@@ -35,6 +36,7 @@ class Content(BaseModel):
     internal_id: str
     episode_id: int
     title: str
+    channel_type: str
     url: str
     content_type: str
     view_count: int
