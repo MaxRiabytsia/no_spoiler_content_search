@@ -11,7 +11,8 @@ class YoutubeAPI:
         api_key = os.environ['YOUTUBE_API_KEY']
         self._youtube = build('youtube', 'v3', developerKey=api_key)
 
-    def search_videos(self, query: str, min_release_date: datetime, max_release_date: datetime, limit: int = 50):
+    def search_videos(self, query: str, min_release_date: datetime, max_release_date: datetime,
+                      episode_id: id, limit: int = 50):
         # TODO: do I need this? do I need to add a timezone offset?
         # Convert min_release_date and max_release_date to ISO format
         min_release_date_iso = (min_release_date - timedelta(
@@ -29,7 +30,7 @@ class YoutubeAPI:
         response = request.execute()
 
         if response['items']:
-            content_results = [Content.from_youtube_api_object(item) for item in response['items']]
+            content_results = [Content.from_youtube_api_object(item, episode_id) for item in response['items']]
             return content_results
 
         return []

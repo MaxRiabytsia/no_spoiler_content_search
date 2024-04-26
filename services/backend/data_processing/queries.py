@@ -46,11 +46,11 @@ def get_content_query(query: str, start_date: datetime, end_date: datetime) -> d
     }
 
 
-def get_air_date_of_episode_query(episode_number: int) -> dict:
+def get_episode_data_query(episode_id: int) -> dict:
     return {
         "query": {
             "match": {
-                "episode_number": episode_number
+                "id": episode_id
             }
         }
     }

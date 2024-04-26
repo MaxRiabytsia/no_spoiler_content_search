@@ -64,6 +64,46 @@ class Episode(ESBaseModel):
     created_at: datetime
     updated_at: datetime
 
+    @classmethod
+    def from_api_object(cls, api_object: dict, show_id: int, number_in_show: int, next_episode_air_date: str = None):
+        return cls(
+            internal_id=api_object["id"],
+            name=api_object["name"],
+            show_id=show_id,
+            season=api_object["seasonNumber"],
+            number_in_season=api_object["number"],
+            number_in_show=number_in_show,
+            is_last_of_the_season=api_object["finaleType"] == "season",
+            is_last_of_the_show=api_object["finaleType"] == "series",
+            description=api_object["overview"],
+            image_url=api_object["image"],
+            air_date=datetime.strptime(api_object["aired"], "%Y-%m-%d"),
+            next_episode_air_date=datetime.strptime(next_episode_air_date, "%Y-%m-%d") if next_episode_air_date else None,
+            created_at=datetime.now(),
+            updated_at=datetime.now()
+        )
+
+    def to_es_loadable_object(self):
+        return {
+            '_index': 'episodes',
+            '_id': self.id,
+            'id': self.id,
+            'internal_id': self.internal_id,
+            'name': self.name,
+            'show_id': self.show_id,
+            'season': self.season,
+            'number_in_season': self.number_in_season,
+            'number_in_show': self.number_in_show,
+            'is_last_of_the_season': self.is_last_of_the_season,
+            'is_last_of_the_show': self.is_last_of_the_show,
+            'description': self.description,
+            'image_url': self.image_url,
+            'air_date': self.air_date.isoformat(),
+            'next_episode_air_date': self.next_episode_air_date.isoformat() if self.next_episode_air_date else None,
+            'created_at': self.created_at.isoformat(),
+            'updated_at': self.updated_at.isoformat()
+        }
+
 
 class Content(ESBaseModel):
     id: int
@@ -78,9 +118,10 @@ class Content(ESBaseModel):
     updated_at: datetime
 
     @classmethod
-    def from_youtube_api_object(cls, youtube_api_object):
+    def from_youtube_api_object(cls, youtube_api_object: dict, episode_id: int):
         return cls(
             internal_id=youtube_api_object["id"]["videoId"],
+            episode_id=episode_id,
             title=youtube_api_object["snippet"]["title"],
             channel_name=youtube_api_object["snippet"]["channelTitle"],
             url=f"https://www.youtube.com/watch?v={youtube_api_object['id']['videoId']}",

@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from datetime import datetime
 
-from models import Show
+from models import Show, Episode
 
 
 class ShowsAPI:
@@ -11,9 +11,30 @@ class ShowsAPI:
         apikey = os.environ["THETVDB_API_KEY"]
         self._tvdb = TVDB(apikey)
 
-    def search(self, show_name: str, limit: int = 1) -> list[dict]:
-        show = self._tvdb.search(show_name, type="series", limit=limit)
-        return Show.from_api_object(show)
+    def search(self, show_name: str, limit: int = 1) -> tuple[Show, list[Episode]]:
+        show_data = self._tvdb.search(show_name, type="series", limit=limit)
+        show = Show.from_api_object(show_data)
+        episodes_data = self._tvdb.get_series_episodes(show.id)
+        episodes = []
+        if episodes_data:
+            episode_number_in_show = 0
+            air_date = None
+            for episode_data in episodes_data:
+                if episode_data["seasonNumber"] == 0:
+                    continue
+
+                episode = Episode.from_api_object(episode_data, show.id, episode_number_in_show)
+                air_date = episode.air_date
+
+                if episodes:
+                    episodes[-1].next_episode_air_date = air_date
+
+                episodes.append(episode)
+                episode_number_in_show += 1
+
+            episodes[-1].next_episode_air_date = air_date
+
+        return show, episodes
 
     def get_show_by_id(self, show_id: int) -> dict:
         return self._tvdb.get_series(show_id)
@@ -46,7 +67,8 @@ if __name__ == "__main__":
 
     apikey = os.environ["THETVDB_API_KEY"]
     tvdb = TVDB(apikey)
-    series = tvdb.get_series_extended(121361)
-    with open("data_processing/response_examples/get_series_extended_121361.json", "w") as f:
-        f.write(str(series))
+    series = tvdb.get_series_episodes(121361)
+    import json
+    with open("data_processing/response_examples/get_series_episodes_121361.json", "w") as f:
+        json.dump(series, f, indent=4)
 
