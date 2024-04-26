@@ -1,11 +1,11 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, BackgroundTasks
 from typing import List, Dict
 
 from models import Show, Episode, Content
-from data_processing.database import Database
+from database import Database
 from data_processing.queries import *
-from data_processing.youtube_api import YoutubeAPI
-from data_processing.shows_api import ShowsAPI
+from youtube_api import YoutubeAPI
+from shows_api import ShowsAPI
 
 
 app = FastAPI()
@@ -21,7 +21,7 @@ async def get_search_suggestions(query: str = Query(..., min_length=1)):
 
 
 @app.get("/show_data")
-def get_show_data(title: str):
+def get_show_data(title: str, background_tasks: BackgroundTasks):
     show_query = get_show_by_title_query(title)
     show_response = db.read(index="shows", query=show_query)
     show_hits = show_response["hits"]["hits"]
@@ -30,6 +30,8 @@ def get_show_data(title: str):
     # we will get the data from the API
     if not show_hits or not show_hits[0]["_source"]["internal_id"]:
         show_data = shows_api.search(title)
+        if show_data:
+            background_tasks.add_task(db.write, data=[show_data])
     else:
         show_data = show_hits[0]["_source"]
 
@@ -45,16 +47,19 @@ def get_show_data(title: str):
 
 
 @app.get("/search_content", response_model=List[Content])
-def search_content(query: str = Query(..., min_length=1), episode_range: str = Query(..., regex="^\\d+-\\d+$")):
+def search_content(background_tasks: BackgroundTasks, query: str = Query(..., min_length=1),
+                   episode_range: str = Query(..., regex="^\\d+-\\d+$")):
     start_date, end_date = get_start_and_end_dates(episode_range)
-    query = get_content_query(query, start_date, end_date)
-    response = db.read(index="content", query=query)
+    es_query = get_content_query(query, start_date, end_date)
+    response = db.read(index="content", query=es_query)
     hits = response["hits"]["hits"]
 
     if hits:
         content_results = [Content(**hit["_source"]) for hit in hits]
     else:
-        content_results = youtube_api.search(query)
+        content_results = youtube_api.search_videos(query, start_date, end_date)
+        if content_results:
+            background_tasks.add_task(db.write, data=content_results)
 
     return content_results
 

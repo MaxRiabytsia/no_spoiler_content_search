@@ -1,4 +1,6 @@
-from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch, helpers
+
+from models import ESBaseModel
 
 
 class Database:
@@ -30,6 +32,9 @@ class Database:
 
         return suggestions
 
-    def write(self, table, data):
-        for record in data:
-            self._es.index(index=table, body=record)
+    def write(self, data: list[ESBaseModel]):
+        def yeild_data():
+            for item in data:
+                yield item.to_es_loadable_object()
+
+        helpers.bulk(self._es, yeild_data())

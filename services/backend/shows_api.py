@@ -3,6 +3,8 @@ import os
 import pandas as pd
 from datetime import datetime
 
+from models import Show
+
 
 class ShowsAPI:
     def __init__(self):
@@ -10,7 +12,8 @@ class ShowsAPI:
         self._tvdb = TVDB(apikey)
 
     def search(self, show_name: str, limit: int = 1) -> list[dict]:
-        return self._tvdb.search(show_name, type="series", limit=limit)
+        show = self._tvdb.search(show_name, type="series", limit=limit)
+        return Show.from_api_object(show)
 
     def get_show_by_id(self, show_id: int) -> dict:
         return self._tvdb.get_series(show_id)
@@ -28,16 +31,22 @@ if __name__ == "__main__":
     # Example usage:
     tvdb_api = ShowsAPI()
 
-    # Get show info by ID
-    show_info = tvdb_api.get_show_by_id(121361)
-    print(show_info)
+    # # Get show info by ID
+    # show_info = tvdb_api.get_show_by_id(121361)
+    # print(show_info)
+    #
+    # # Search for a show
+    # search_results = tvdb_api.search("Breaking Bad")
+    # print(search_results)
+    #
+    # # Get n most popular shows
+    # n = 5
+    # most_popular_shows = tvdb_api.get_n_most_popular_shows(n)
+    # print(most_popular_shows)
 
-    # Search for a show
-    search_results = tvdb_api.search("Breaking Bad")
-    print(search_results)
-
-    # Get n most popular shows
-    n = 5
-    most_popular_shows = tvdb_api.get_n_most_popular_shows(n)
-    print(most_popular_shows)
+    apikey = os.environ["THETVDB_API_KEY"]
+    tvdb = TVDB(apikey)
+    series = tvdb.get_series_extended(121361)
+    with open("data_processing/response_examples/get_series_extended_121361.json", "w") as f:
+        f.write(str(series))
 
