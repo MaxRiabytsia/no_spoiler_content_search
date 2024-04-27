@@ -29,7 +29,7 @@ def get_content_query(query: str, start_date: datetime, end_date: datetime) -> d
                     {
                         "multi_match": {
                             "query": query,
-                            "fields": ["title", "description"]
+                            "fields": ["title", "description", "channel_name"]
                         }
                     },
                     {

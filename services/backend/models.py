@@ -33,11 +33,9 @@ class Show(ESBaseModel):
         return {
             '_index': 'show',
             '_id': self.id,
-            'id': self.id,
             'internal_id': self.internal_id,
             'title': self.title,
             'description': self.description,
-            'rating': self.rating,
             'image_url': self.image_url,
             'is_airing': self.is_airing,
             'created_at': self.created_at.isoformat(),
@@ -85,7 +83,6 @@ class Episode(ESBaseModel):
         return {
             '_index': 'episode',
             '_id': self.id,
-            'id': self.id,
             'internal_id': self.internal_id,
             'name': self.name,
             'show_id': self.show_id,
@@ -109,6 +106,7 @@ class Content(ESBaseModel):
     episode_id: int
     title: str
     channel_name: str
+    description: str
     url: str
     image_url: str
     published_date: datetime
@@ -122,6 +120,7 @@ class Content(ESBaseModel):
             episode_id=episode_id,
             title=youtube_api_object["snippet"]["title"],
             channel_name=youtube_api_object["snippet"]["channelTitle"],
+            description=youtube_api_object["snippet"]["description"],
             url=f"https://www.youtube.com/watch?v={youtube_api_object['id']['videoId']}",
             image_url=youtube_api_object["snippet"]["thumbnails"]["high"]["url"],
             published_date=datetime.strptime(youtube_api_object["snippet"]["publishedAt"], "%Y-%m-%dT%H:%M:%SZ"),
@@ -133,7 +132,6 @@ class Content(ESBaseModel):
         return {
                 '_index': 'content',
                 '_id': self.id,
-                'id': self.id,
                 'internal_id': self.internal_id,
                 'episode_id': self.episode_id,
                 'title': self.title,

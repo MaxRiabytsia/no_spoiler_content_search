@@ -67,8 +67,8 @@ if __name__ == "__main__":
 
     apikey = os.environ["THETVDB_API_KEY"]
     tvdb = TVDB(apikey)
-    series = tvdb.get_series_episodes(121361)
+    series = tvdb.search("House of dragon", type="series", limit=1)
     import json
-    with open("data_processing/response_examples/get_series_episodes_121361.json", "w") as f:
+    with open("data_processing/response_examples/get_search_house_of_dragon.json", "w") as f:
         json.dump(series, f, indent=4)
 
