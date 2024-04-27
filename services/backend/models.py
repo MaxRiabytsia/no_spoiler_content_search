@@ -12,7 +12,6 @@ class Show(ESBaseModel):
     internal_id: str
     title: str
     description: str
-    rating: float
     image_url: str
     is_airing: bool
     created_at: datetime
@@ -21,11 +20,10 @@ class Show(ESBaseModel):
     @classmethod
     def from_api_object(cls, api_object):
         return cls(
-            internal_id=api_object["id"],
-            title=api_object["seriesName"],
+            internal_id=api_object["tvdb_id"],
+            title=api_object["name"],
             description=api_object["overview"],
-            rating=api_object["siteRating"],
-            image_url=api_object["banner"],
+            image_url=api_object["thumbnail"],
             is_airing=api_object["status"] == "Continuing",
             created_at=datetime.now(),
             updated_at=datetime.now()
@@ -33,7 +31,7 @@ class Show(ESBaseModel):
 
     def to_es_loadable_object(self):
         return {
-            '_index': 'shows',
+            '_index': 'show',
             '_id': self.id,
             'id': self.id,
             'internal_id': self.internal_id,
@@ -85,7 +83,7 @@ class Episode(ESBaseModel):
 
     def to_es_loadable_object(self):
         return {
-            '_index': 'episodes',
+            '_index': 'episode',
             '_id': self.id,
             'id': self.id,
             'internal_id': self.internal_id,

@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 
 # Connect to Elasticsearch
-es = Elasticsearch(['http://localhost:9200'])  # Replace with your Elasticsearch host and port
+es = Elasticsearch(['http://localhost:9200'])
 
 # Mappings for 'show' index
 show_mapping = {
@@ -10,9 +10,8 @@ show_mapping = {
             "id": {"type": "keyword"},
             "internal_id": {"type": "keyword"},
             "title": {"type": "completion"},
-            "description": {"type": "text", "index": False},  # Disable analysis for description field
-            "rating": {"type": "integer"},
-            "poster_url": {"type": "text", "index": False},  # Disable analysis for poster_url field
+            "description": {"type": "text", "index": False},
+            "image_url": {"type": "text", "index": False},
             "is_airing": {"type": "boolean"},
             "created_at": {"type": "date"},
             "updated_at": {"type": "date"}
@@ -26,17 +25,19 @@ episode_mapping = {
         "properties": {
             "id": {"type": "keyword"},
             "internal_id": {"type": "keyword"},
-            "name": {"type": "text", "index": False},  # Disable analysis for name field
+            "name": {"type": "text", "index": False},
             "show_id": {"type": "keyword"},
             "season": {"type": "integer"},
-            "number": {"type": "integer"},
+            "number_in_season": {"type": "integer"},
+            "number_in_show": {"type": "integer"},
             "is_last_of_the_season": {"type": "boolean"},
             "is_last_of_the_show": {"type": "boolean"},
-            "description": {"type": "text", "index": False},  # Disable analysis for description field
+            "description": {"type": "text", "index": False},
+            "image_url": {"type": "text", "index": False},
             "air_date": {"type": "date"},
             "next_episode_air_date": {"type": "date", "null_value": None},
-            "created_at": {"type": "date", "index": False},  # Disable analysis for the field
-            "updated_at": {"type": "date", "index": False},  # Disable analysis for the field
+            "created_at": {"type": "date", "index": False},
+            "updated_at": {"type": "date", "index": False},
         }
     }
 }
@@ -49,13 +50,12 @@ content_mapping = {
             "internal_id": {"type": "keyword"},
             "episode_id": {"type": "keyword"},
             "title": {"type": "text"},
-            "url": {"type": "text", "index": False},  # Disable analysis for url field
-            "content_type": {"type": "keyword"},
-            "view_count": {"type": "integer"},
-            "like_count": {"type": "integer"},
+            "channel_name": {"type": "text"},
+            "url": {"type": "text", "index": False},
+            "image_url": {"type": "text", "index": False},
             "published_date": {"type": "date"},
-            "created_at": {"type": "date", "index": False},  # Disable analysis for the field
-            "updated_at": {"type": "date", "index": False},  # Disable analysis for the field
+            "created_at": {"type": "date", "index": False},
+            "updated_at": {"type": "date", "index": False},
         }
     }
 }
@@ -65,7 +65,7 @@ pipeline_mapping = {
         "properties": {
             "id": {"type": "keyword"},
             "name": {"type": "keyword"},
-            "last_run_timestamp": {"type": "date", "index": False},  # Disable analysis for the field
+            "last_run_timestamp": {"type": "date", "index": False},
         }
     }
 }
