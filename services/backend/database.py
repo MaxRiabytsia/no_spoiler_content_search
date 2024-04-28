@@ -5,7 +5,7 @@ from models import ESBaseModel
 
 class Database:
     def __init__(self):
-        self._es = Elasticsearch()
+        self._es = Elasticsearch(['http://localhost:9200'])
 
     def read(self, query: dict, index: str):
         return self._es.search(index=index, body=query)
@@ -38,3 +38,18 @@ class Database:
                 yield item.to_es_loadable_object()
 
         helpers.bulk(self._es, yeild_data())
+
+
+if __name__ == "__main__":
+    # Example usage:
+    db = Database()
+    query = {
+        "query": {
+            "match": {
+                "title": "game of thrones"
+            }
+        }
+    }
+    response = db.read(query, "show")
+    print(response)
+

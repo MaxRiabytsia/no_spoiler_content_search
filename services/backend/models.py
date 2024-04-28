@@ -35,8 +35,8 @@ class Show(ESBaseModel):
     description: str
     image_url: str
     is_airing: bool
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
     def from_api_object(cls, api_object):
@@ -77,8 +77,8 @@ class Episode(ESBaseModel):
     image_url: str
     air_date: datetime
     next_episode_air_date: datetime
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
     def from_api_object(cls, api_object: dict, show_external_id: str, number_in_show: int, next_episode_air_date: str = None):
@@ -129,8 +129,8 @@ class Content(ESBaseModel):
     url: str
     image_url: str
     published_date: datetime
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
     def from_youtube_api_object(cls, youtube_api_object: dict, episode_external_id: str):
