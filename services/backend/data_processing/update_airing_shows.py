@@ -3,7 +3,7 @@ from database import Database
 
 
 def get_airing_show_ids(db):
-    query = "SELECT internal_id FROM show WHERE is_airing = true"
+    query = "SELECT external_id FROM show WHERE is_airing = true"
     return db.read(query)
 
 

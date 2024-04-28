@@ -11,19 +11,25 @@ class ShowsAPI:
         apikey = os.environ["THETVDB_API_KEY"]
         self._tvdb = TVDB(apikey)
 
-    def search(self, show_name: str, limit: int = 1) -> tuple[Show, list[Episode]]:
+    def search(self, show_name: str, limit: int = 1) -> tuple[Show, list[Episode]] or None:
         show_data = self._tvdb.search(show_name, type="series", limit=limit)
-        show = Show.from_api_object(show_data)
-        episodes_data = self._tvdb.get_series_episodes(show.id)
+        print(show_data)
+
+        if not show_data:
+            return None, []
+
+        show = Show.from_api_object(show_data[0])
+        episodes_data = self._tvdb.get_series_episodes(show.external_id)
+        print(episodes_data)
         episodes = []
         if episodes_data:
             episode_number_in_show = 0
             air_date = None
-            for episode_data in episodes_data:
-                if episode_data["seasonNumber"] == 0:
+            for episode in episodes_data["episodes"]:
+                if episode["seasonNumber"] == 0 or not episode["aired"]:
                     continue
 
-                episode = Episode.from_api_object(episode_data, show.id, episode_number_in_show)
+                episode = Episode.from_api_object(episode, show.external_id, episode_number_in_show)
                 air_date = episode.air_date
 
                 if episodes:
@@ -44,7 +50,7 @@ class ShowsAPI:
         return self._tvdb.get_updates(since=since, type="series", action="update")
 
     def get_n_most_popular_shows(self, n: int) -> list[int]:
-        df = pd.read_csv("initial_data/shows.csv", encoding="utf-8")
+        df = pd.read_csv("data_processing/initial_data/shows.csv", encoding="utf-8")
         return df["name"].head(n).tolist()
 
 
