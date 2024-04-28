@@ -13,14 +13,20 @@ class ShowsAPI:
 
     def search(self, show_name: str, limit: int = 1) -> tuple[Show, list[Episode]] or None:
         show_data = self._tvdb.search(show_name, type="series", limit=limit)
-        print(show_data)
 
         if not show_data:
             return None, []
 
         show = Show.from_api_object(show_data[0])
-        episodes_data = self._tvdb.get_series_episodes(show.external_id)
-        print(episodes_data)
+        episodes = self.get_episodes_by_show_id(show.external_id)
+        return show, episodes
+
+    def get_show_by_id(self, show_id: int) -> Show:
+        show_data = self._tvdb.get_series(show_id)
+        return Show.from_api_object(show_data)
+
+    def get_episodes_by_show_id(self, show_external_id: int) -> list[Episode]:
+        episodes_data = self._tvdb.get_series_episodes(show_external_id)
         episodes = []
         if episodes_data:
             episode_number_in_show = 0
@@ -29,7 +35,7 @@ class ShowsAPI:
                 if episode["seasonNumber"] == 0 or not episode["aired"]:
                     continue
 
-                episode = Episode.from_api_object(episode, show.external_id, episode_number_in_show)
+                episode = Episode.from_api_object(episode, show_external_id, episode_number_in_show)
                 air_date = episode.air_date
 
                 if episodes:
@@ -40,13 +46,10 @@ class ShowsAPI:
 
             episodes[-1].next_episode_air_date = air_date
 
-        return show, episodes
+        return episodes
 
-    def get_show_by_id(self, show_id: int) -> dict:
-        return self._tvdb.get_series(show_id)
-
-    def get_updates_since_timestamp(self, timestamp: datetime) -> list[dict]:
-        since = int(timestamp.timestamp())
+    def get_updates_since_timestamp(self, timestamp: datetime | None) -> list[dict]:
+        since = int(timestamp.timestamp()) if timestamp else None
         return self._tvdb.get_updates(since=since, type="series", action="update")
 
     def get_n_most_popular_shows(self, n: int) -> list[int]:

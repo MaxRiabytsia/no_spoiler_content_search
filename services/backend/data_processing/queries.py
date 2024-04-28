@@ -54,3 +54,25 @@ def get_episode_data_query(episode_id: int) -> dict:
             }
         }
     }
+
+
+def get_airing_show_ids_query():
+    return {
+        "query": {
+            "term": {
+                "is_airing": True
+            }
+        },
+        "_source": ["external_id"]
+    }
+
+
+def get_last_update_timestamp_query():
+    return {
+        "query": {
+            "term": {
+                "name": "update_airing_shows"
+            }
+        },
+        "_source": ["last_run_timestamp"]
+    }
