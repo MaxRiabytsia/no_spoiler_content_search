@@ -1,5 +1,26 @@
-from pydantic import BaseModel
+from typing import Optional, Type, Any, Tuple
+from copy import deepcopy
 from datetime import datetime
+
+from pydantic import BaseModel, create_model
+from pydantic.fields import FieldInfo
+
+
+def partial_model(model: Type[BaseModel]):
+    def make_field_optional(field: FieldInfo, default: Any = None) -> Tuple[Any, FieldInfo]:
+        new = deepcopy(field)
+        new.default = default
+        new.annotation = Optional[field.annotation]  # type: ignore
+        return new.annotation, new
+    return create_model(
+        f'Partial{model.__name__}',
+        __base__=model,
+        __module__=model.__module__,
+        **{
+            field_name: make_field_optional(field_info)
+            for field_name, field_info in model.__fields__.items()
+        }
+    )
 
 
 class ESBaseModel(BaseModel):
@@ -7,20 +28,20 @@ class ESBaseModel(BaseModel):
         raise NotImplementedError
 
 
+@partial_model
 class Show(ESBaseModel):
-    id: int
-    internal_id: str
+    external_id: int
     title: str
     description: str
     image_url: str
     is_airing: bool
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
     def from_api_object(cls, api_object):
         return cls(
-            internal_id=api_object["tvdb_id"],
+            external_id=api_object["tvdb_id"],
             title=api_object["name"],
             description=api_object["overview"],
             image_url=api_object["thumbnail"],
@@ -32,8 +53,7 @@ class Show(ESBaseModel):
     def to_es_loadable_object(self):
         return {
             '_index': 'show',
-            '_id': self.id,
-            'internal_id': self.internal_id,
+            'external_id': self.external_id,
             'title': self.title,
             'description': self.description,
             'image_url': self.image_url,
@@ -43,11 +63,11 @@ class Show(ESBaseModel):
         }
 
 
+@partial_model
 class Episode(ESBaseModel):
-    id: int
-    internal_id: str
+    external_id: int
     name: str
-    show_id: int
+    show_external_id: int
     season: int
     number_in_season: int
     number_in_show: int
@@ -57,15 +77,15 @@ class Episode(ESBaseModel):
     image_url: str
     air_date: datetime
     next_episode_air_date: datetime
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
-    def from_api_object(cls, api_object: dict, show_id: int, number_in_show: int, next_episode_air_date: str = None):
+    def from_api_object(cls, api_object: dict, show_external_id: int, number_in_show: int, next_episode_air_date: str = None):
         return cls(
-            internal_id=api_object["id"],
+            external_id=api_object["id"],
             name=api_object["name"],
-            show_id=show_id,
+            show_external_id=show_external_id,
             season=api_object["seasonNumber"],
             number_in_season=api_object["number"],
             number_in_show=number_in_show,
@@ -82,10 +102,9 @@ class Episode(ESBaseModel):
     def to_es_loadable_object(self):
         return {
             '_index': 'episode',
-            '_id': self.id,
-            'internal_id': self.internal_id,
+            'external_id': self.external_id,
             'name': self.name,
-            'show_id': self.show_id,
+            'show_external_id': self.show_external_id,
             'season': self.season,
             'number_in_season': self.number_in_season,
             'number_in_show': self.number_in_show,
@@ -100,24 +119,24 @@ class Episode(ESBaseModel):
         }
 
 
+@partial_model
 class Content(ESBaseModel):
-    id: int
-    internal_id: str
-    episode_id: int
+    external_id: int
+    episode_external_id: int
     title: str
     channel_name: str
     description: str
     url: str
     image_url: str
     published_date: datetime
-    created_at: datetime
-    updated_at: datetime
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     @classmethod
-    def from_youtube_api_object(cls, youtube_api_object: dict, episode_id: int):
+    def from_youtube_api_object(cls, youtube_api_object: dict, episode_external_id: str):
         return cls(
-            internal_id=youtube_api_object["id"]["videoId"],
-            episode_id=episode_id,
+            external_id=youtube_api_object["id"]["videoId"],
+            episode_external_id=episode_external_id,
             title=youtube_api_object["snippet"]["title"],
             channel_name=youtube_api_object["snippet"]["channelTitle"],
             description=youtube_api_object["snippet"]["description"],
@@ -131,9 +150,8 @@ class Content(ESBaseModel):
     def to_es_loadable_object(self):
         return {
                 '_index': 'content',
-                '_id': self.id,
-                'internal_id': self.internal_id,
-                'episode_id': self.episode_id,
+                'external_id': self.external_id,
+                'episode_external_id': self.episode_external_id,
                 'title': self.title,
                 'channel_name': self.channel_name,
                 'url': self.url,

@@ -28,7 +28,7 @@ def get_show_data(title: str, background_tasks: BackgroundTasks):
 
     # if we have no info on the show or if we have only title,
     # we will get the data from the API
-    if not show_hits or not show_hits[0]["_source"]["internal_id"]:
+    if not show_hits or not show_hits[0]["_source"]["external_id"]:
         show, episodes = shows_api.search(title)
         if show:
             background_tasks.add_task(db.write, data=[show])

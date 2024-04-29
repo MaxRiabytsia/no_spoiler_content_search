@@ -7,8 +7,7 @@ es = Elasticsearch(['http://localhost:9200'])
 show_mapping = {
     "mappings": {
         "properties": {
-            "id": {"type": "keyword"},
-            "internal_id": {"type": "keyword"},
+            "external_id": {"type": "keyword"},
             "title": {
                 "type": "text",
                 "fields": {
@@ -30,8 +29,7 @@ show_mapping = {
 episode_mapping = {
     "mappings": {
         "properties": {
-            "id": {"type": "keyword"},
-            "internal_id": {"type": "keyword"},
+            "external_id": {"type": "keyword"},
             "name": {"type": "keyword"},
             "show_id": {"type": "keyword"},
             "season": {"type": "integer"},
@@ -53,8 +51,7 @@ episode_mapping = {
 content_mapping = {
     "mappings": {
         "properties": {
-            "id": {"type": "keyword"},
-            "internal_id": {"type": "keyword"},
+            "external_id": {"type": "keyword"},
             "episode_id": {"type": "keyword"},
             "title": {"type": "text"},
             "channel_name": {"type": "text"},

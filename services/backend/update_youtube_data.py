@@ -57,9 +57,9 @@ def main():
             videos = api.search_videos(episode['show_name'],
                                        min_release_date=episode['air_date'],
                                        max_release_date=episode['next_episode_air_date'],
+                                       episode_id=episode['id'],
                                        limit=50)
-            videos["episode_id"] = episode["id"]
-            db.write("content", videos)
+            db.write(videos)
 
 
 if __name__ == "__main__":
