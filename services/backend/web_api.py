@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Dict
 
 from models import Show, Episode, Content
@@ -11,6 +12,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8080"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 db = Database()
 youtube_api = YoutubeAPI()
 shows_api = ShowsAPI()
@@ -18,7 +28,7 @@ shows_api = ShowsAPI()
 
 @app.get("/search_suggestions")
 async def get_search_suggestions(query: str = Query(..., min_length=1)):
-    suggestions = await db.get_suggestions(query, index='shows', field='title')
+    suggestions = await db.get_suggestions(query, index='show', field='title')
     return suggestions
 
 
@@ -37,15 +47,11 @@ def get_show_data(title: str, background_tasks: BackgroundTasks):
             background_tasks.add_task(db.write, data=episodes)
     else:
         show_data = show_hits[0]["_source"]
-        show = Show.from_api_object(show_data)
-        episode_query = get_episodes_by_show_id_query(show_data["id"])
-        episode_response = db.read(index="episodes", query=episode_query)
+        show = Show(**show_data)
+        episode_query = get_episodes_by_show_id_query(show_data["external_id"])
+        episode_response = db.read(index="episode", query=episode_query)
         episode_hits = episode_response["hits"]["hits"]
         episodes = [Episode(**episode["_source"]) for episode in episode_hits]
-
-    print(show, flush=True)
-    print("_________________________________________________________", flush=True)
-    print(episodes, flush=True)
 
     return show, episodes
 

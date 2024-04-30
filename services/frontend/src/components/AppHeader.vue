@@ -20,7 +20,7 @@ import { RouterLink } from "vue-router";
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 header {
   font-size: 24px;
   background-color: #222222;

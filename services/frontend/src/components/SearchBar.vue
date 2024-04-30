@@ -1,11 +1,12 @@
 <script setup>
-import { ref, defineEmits, computed } from "vue";
+import { ref, computed } from "vue";
+import { useRouter } from 'vue-router'
 
-const emit = defineEmits(["search"]);
+const router = useRouter()
 const searchQuery = ref('');
 
 const search = () => {
-  emit('search', searchQuery.value);
+  router.push({ name: 'episodes', query: { q: searchQuery.value } })
 }
 
 const clearSearch = () => {
@@ -30,7 +31,7 @@ const showClearButton = computed(() => {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .search-bar {
   display: flex;
   align-items: center;
