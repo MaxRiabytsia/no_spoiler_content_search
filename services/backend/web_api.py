@@ -6,8 +6,10 @@ from database import Database
 from data_processing.queries import *
 from youtube_api import YoutubeAPI
 from shows_api import ShowsAPI
+from dotenv import load_dotenv
 
 
+load_dotenv()
 app = FastAPI()
 db = Database()
 youtube_api = YoutubeAPI()
@@ -23,7 +25,7 @@ async def get_search_suggestions(query: str = Query(..., min_length=1)):
 @app.get("/show_data")
 def get_show_data(title: str, background_tasks: BackgroundTasks):
     show_query = get_show_by_title_query(title)
-    show_response = db.read(index="shows", query=show_query)
+    show_response = db.read(index="show", query=show_query)
     show_hits = show_response["hits"]["hits"]
 
     # if we have no info on the show or if we have only title,
@@ -40,6 +42,10 @@ def get_show_data(title: str, background_tasks: BackgroundTasks):
         episode_response = db.read(index="episodes", query=episode_query)
         episode_hits = episode_response["hits"]["hits"]
         episodes = [Episode(**episode["_source"]) for episode in episode_hits]
+
+    print(show, flush=True)
+    print("_________________________________________________________", flush=True)
+    print(episodes, flush=True)
 
     return show, episodes
 

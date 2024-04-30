@@ -7,12 +7,13 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgres://hello_fastapi:hello_fastapi@db:5432/hello_fastapi_dev
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - THETVDB_API_KEY=${THETVDB_API_KEY}
     volumes:
       - ./services/backend:/app
-    command: uvicorn src.main:app --reload --host 0.0.0.0 --port 5000
+    command: sh -c "pip install -r requirements.txt && uvicorn web_api:app --reload --host 0.0.0.0 --port 5000"
     depends_on:
-      - db
+      - elasticsearch
 
   frontend:
     build: ./services/frontend
@@ -22,16 +23,14 @@ services:
     ports:
       - "8080:8080"
 
-  db:
-    image: postgres:15.1
-    expose:
-      - 5432
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
     environment:
-      - POSTGRES_USER=hello_fastapi
-      - POSTGRES_PASSWORD=hello_fastapi
-      - POSTGRES_DB=hello_fastapi_dev
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - xpack.security.enabled=false
+      - discovery.type=single-node
 
 volumes:
-  postgres_data:
+    elasticsearch_data:

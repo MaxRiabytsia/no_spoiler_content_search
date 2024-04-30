@@ -5,7 +5,8 @@ from models import ESBaseModel
 
 class Database:
     def __init__(self):
-        self._es = Elasticsearch(['http://localhost:9200'])
+        self._es = Elasticsearch(['http://elasticsearch:9200'])
+        print(self._es.ping())
 
     def read(self, query: dict, index: str):
         return self._es.search(index=index, body=query)
