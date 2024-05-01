@@ -3,9 +3,12 @@ from elasticsearch import Elasticsearch, helpers
 from models import ESBaseModel
 
 
+url = "http://elasticsearch:9200"
+
+
 class Database:
     def __init__(self):
-        self._es = Elasticsearch(['http://elasticsearch:9200'])
+        self._es = Elasticsearch([url])
         print(self._es.ping())
 
     def read(self, query: dict, index: str):
@@ -42,15 +45,14 @@ class Database:
 
 
 if __name__ == "__main__":
-    # Example usage:
+    url = "http://localhost:9200"
     db = Database()
     query = {
         "query": {
-            "match": {
-                "title": "game of thrones"
-            }
-        }
+            "match_all": {}
+        },
+        "size": 100,
+        "_source": ["external_id", "name"]
     }
-    response = db.read(query, "show")
+    response = db.read(query, "episode")
     print(response)
-

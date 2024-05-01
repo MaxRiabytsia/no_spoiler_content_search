@@ -29,7 +29,7 @@ function selectEpisode(episodeId) {
 }
 
 function getImgUrl(pic) {
-  return require('../assets/' + pic);
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
 </script>
 
@@ -59,7 +59,7 @@ function getImgUrl(pic) {
             :class="{ selected: episode.id === selectedEpisodeId }"
             @click="selectEpisode(episode.id)"
         >
-          <img :src="getImgUrl(episode.imageUrl)" :alt="episode.title" class="episode-thumbnail"/>
+          <img :src="getImgUrl(episode.image_url)" :alt="episode.title" class="episode-thumbnail"/>
           <div class="episode-details">
             <h4>{{ episode.title }}</h4>
             <p>{{ episode.description }}</p>

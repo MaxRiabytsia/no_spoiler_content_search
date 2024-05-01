@@ -9,11 +9,16 @@ NUMBER_OF_SHOWS_WITH_NAME_ONLY = 50_000
 def get_n_most_popular_show_info(api, n, name_only=False):
     shows = []
     episodes = []
+    names = set()
     for i, show_name in enumerate(api.get_n_most_popular_shows(n)):
         test_shows = ['Game of Thrones', 'Squid Game', 'Breaking Bad', 'The Office',
                       'Friends', 'Better Call Saul', "The Queen's Gambit"]
         if show_name not in test_shows:
             continue
+
+        if show_name in names:
+            continue
+        names.add(show_name)
 
         print(f"Saving {'name' if name_only else 'info'} for show {i + 1}/{n}: {show_name}")
         if name_only:

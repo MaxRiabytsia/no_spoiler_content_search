@@ -16,7 +16,8 @@ def get_episodes_by_show_id_query(show_id: int) -> dict:
         "query": {
             "match": {
                 "show_id": show_id
-            }
+            },
+            "size": 10000,
         }
     }
 
