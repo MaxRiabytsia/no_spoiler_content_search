@@ -1,31 +1,46 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router'
 import axios from 'axios'
+import router from "@/router";
+import { useStore } from 'vuex';
 
 
 const route = useRoute();
 const showData = ref({});
-const episodes = ref([]);
+const allEpisodes = ref([]);
 const selectedSeason = ref(1);
 const selectedEpisodeId = ref(null);
+const selectedEpisode = ref(null);
+const store = useStore();
 
+const episodes = computed(() => {
+  return allEpisodes.value.filter(episode => episode.season === selectedSeason.value);
+});
+
+const seasonCount = computed(() => {
+  return allEpisodes.value.length > 0 ? Math.max(...allEpisodes.value.map(episode => episode.season)) : 1;
+});
 
 onMounted(() => {
   const searchQuery = route.query.q
   axios.get(`http://localhost:5000/show_data?title=${searchQuery}`)
     .then(response => {
-      showData.value = response.data[0]
-      episodes.value = response.data[1]
       console.log(response.data)
+      showData.value = response.data[0]
+      allEpisodes.value = response.data[1]
+      store.state.showData = response.data[0];
+      store.state.allEpisodes = response.data[1];
     })
     .catch(error => {
       console.error(error)
     })
 })
 
-function selectEpisode(episodeId) {
-  selectedEpisodeId.value = episodeId;
+function selectEpisode(episode) {
+  selectedEpisodeId.value = episode.external_id;
+  selectedEpisode.value = episode;
+  router.push({ name: 'episode', query: episode });
 }
 
 function getImgUrl(pic) {
@@ -45,23 +60,23 @@ function getImgUrl(pic) {
     <h1>What was the last episode you have seen?</h1>
     <div class="last-episode">
       <div class="dropdown-container">
-        <select v-model="selectedSeason" @change="fetchEpisodes" class="season-dropdown">
-          <option v-for="season in showData.seasons" :key="season.id" :value="season.id">
-            {{ season.name }}
+        <select v-model="selectedSeason" class="season-dropdown">
+          <option v-for="n in seasonCount" :key="n" :value="n">
+            Season {{ n }}
           </option>
         </select>
       </div>
       <div class="episodes">
         <div
             v-for="episode in episodes"
-            :key="episode.id"
+            :key="episode.external_id"
             class="episode-card"
-            :class="{ selected: episode.id === selectedEpisodeId }"
-            @click="selectEpisode(episode.id)"
+            :class="{ selected: episode.external_id === selectedEpisodeId }"
+            @click="selectEpisode(episode)"
         >
           <img :src="getImgUrl(episode.image_url)" :alt="episode.title" class="episode-thumbnail"/>
           <div class="episode-details">
-            <h4>{{ episode.title }}</h4>
+            <h4>{{ episode.name }}</h4>
             <p>{{ episode.description }}</p>
           </div>
         </div>

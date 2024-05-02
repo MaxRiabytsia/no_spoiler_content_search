@@ -1,12 +1,19 @@
 <script setup>
-import { ref, computed } from "vue";
-import { useRouter } from 'vue-router'
+import { ref, computed, defineProps } from "vue";
+import { useRouter } from 'vue-router';
 
 const router = useRouter()
 const searchQuery = ref('');
 
+const props = defineProps({
+  routeName: {
+    type: String,
+    required: true,
+  },
+});
+
 const search = () => {
-  router.push({ name: 'episodes', query: { q: searchQuery.value } })
+  router.push({ name: props.routeName, query: { q: searchQuery.value } })
 }
 
 const clearSearch = () => {

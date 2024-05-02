@@ -1,90 +1,67 @@
 <script setup>
-import { ref } from 'vue';
+import {onMounted, ref} from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
+import axios from "axios";
+import {useRoute} from "vue-router";
+import { useStore } from 'vuex';
 
-const showInfo = ref({
-  title: 'Game of Thrones',
-  lastWatched: 'S1E1 Winter Is Coming',
-  episodeImage: 'got_s1e1.jpeg',
-  showImage: 'https://cdn.europosters.eu/image/1300/art-photo/game-of-thrones-season-1-key-art-i135455.jpg',
+
+const videos = ref([]);
+const route = useRoute();
+const store = useStore();
+const searchInfo = ref({
+  show_title: store.state.showData.title,
+  show_image_url: store.state.showData.image_url,
+  episode_title: store.state.lastWatchedEpisode.name,
+  episode_image_url: store.state.lastWatchedEpisode.image_url
 });
 
-const videos = ref([
-  {
-    id: 1,
-    title: 'Ned | GOT REVIEW (Season 1)',
-    views: '473,141',
-    description: 'this video now has CLOSED CAPTIONS because the audio balancing is sorta bad.',
-    channel: 'Glidus',
-    thumbnail: 'glidus1.jpg',
-  },
-  {
-    id: 2,
-    title: 'Jon & Tyrion | GOT REVIEW (Season 1)',
-    views: '211,561',
-    description: 'Remember Season 1 of that one show? Remember the funny dwarf and the hot sad guy? Remember when Gildus used to make videos? Well, this video is gonna be a total nostalgia trip.',
-    channel: 'Glidus',
-    thumbnail: 'glidus2.jpg',
-  },
-  {
-    id: 3,
-    title: 'Daenerys | GOT REVIEW (Season 1)',
-    views: '250,586',
-    description: 'Wow, angry dragon lady had humble beginnings? Who knew. I hope you enjoyed the eyes. I\'ll look way too long. I look forward to doing it again.',
-    channel: 'Glidus',
-    thumbnail: 'glidus3.jpg',
-  },
-  {
-    id: 4,
-    title: 'Arya | GOT REVIEW (Season 1)',
-    views: '254,361',
-    description: 'thank you for waiting :) arya was a good character once so let\'s figure out why I guess',
-    channel: 'Glidus',
-    thumbnail: 'glidus4.jpg',
-  },
-]);
-
-const selectedSeason = ref('');
-const searchQuery = ref('');
-
-const searchVideos = (query) => {
-  searchQuery.value = query;
-  // Implement video search logic based on the query
-};
+onMounted(() => {
+  const searchQuery = route.query.q
+  axios.get(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=110413-110414`)
+    .then(response => {
+      console.log(response.data)
+      videos.value = response.data
+    })
+    .catch(error => {
+      console.error(error)
+    })
+})
 
 const getImgUrl = (pic) => {
-  return require('../assets/' + pic)
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
 </script>
+
 <template>
   <div class="no-spoiler-search">
     <div class="content-container">
       <div class="show-info">
         <h2 class="show-name-title">TV Show:</h2>
-        <p class="show-name">{{ showInfo.title }}</p>
-        <img :src="showInfo.showImage" alt="" class="show-poster" />
+        <p class="show-name">{{ searchInfo.show_title }}</p>
+        <img :src="searchInfo.show_image_url" alt="" class="show-poster" />
         <p class="last-watched-episode-title">Last Watched Episode:</p>
-        <p class="last-watched-episode">{{ showInfo.lastWatched }}</p>
-        <img :src="getImgUrl(showInfo.episodeImage)" alt="" class="show-poster" />
+        <p class="last-watched-episode">{{ searchInfo.episode_title }}</p>
+        <img :src="getImgUrl(searchInfo.episode_image_url)" alt="" class="show-poster" />
       </div>
       <div class="main-content">
         <div class="search-container">
           <div class="dropdown-container">
-            <select class="range-dropdown" v-model="selectedSeason">
+            <select class="range-dropdown">
               <option value="" selected>Episode range</option>
               <option value="1">Season 1</option>
             </select>
           </div>
-          <SearchBar @search="searchVideos" />
+          <SearchBar route-name="content_results" />
         </div>
         <div class="video-list">
-          <div v-for="video in videos" :key="video.id" class="video-item">
+          <div v-for="video in videos" :key="video.external_id" class="video-item">
             <div class="thumbnail-container">
-              <img :src="getImgUrl(video.thumbnail)" :alt="video.title" class="thumbnail" />
+              <img :src="getImgUrl(video.image_url)" :alt="video.title" class="thumbnail" />
             </div>
             <div class="video-info">
               <h3 class="video-title">{{ video.title }}</h3>
-              <p class="video-views">{{ video.channel }} | {{ video.views }} views</p>
+              <p class="video-views">{{ video.channel }}</p>
               <p class="video-description">{{ video.description }}</p>
             </div>
           </div>

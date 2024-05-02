@@ -16,8 +16,8 @@ const routes = [
         component: EpisodesView
     },
     {
-        path: '/content_search',
-        name: 'content_search',
+        path: '/episode',
+        name: 'episode',
         component: ContentSearchView
     },
     {

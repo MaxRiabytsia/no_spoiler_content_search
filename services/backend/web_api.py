@@ -76,11 +76,14 @@ def search_content(background_tasks: BackgroundTasks, query: str = Query(..., mi
 
 
 def get_start_and_end_dates(start_episode_id: int, end_episode_id: int) -> tuple[datetime, datetime]:
+    def get_correct_date_format(date: str) -> datetime:
+        return datetime.strptime(date, "%Y-%m-%dT%H:%M:%S")
+
     start_episode_data = get_episode_data_query(start_episode_id)
-    start_date = db.read(index="episodes", query=start_episode_data)["hits"]["hits"][0]["_source"]["air_date"]
-    start_date = datetime.strptime(start_date, "%Y-%m-%d")
+    start_date = db.read(index="episode", query=start_episode_data)["hits"]["hits"][0]["_source"]["air_date"]
+    start_date = get_correct_date_format(start_date)
     end_episode_data = get_episode_data_query(end_episode_id)
-    end_date = db.read(index="episodes", query=end_episode_data)["hits"]["hits"][0]["_source"]["air_date"]
-    end_date = datetime.strptime(end_date, "%Y-%m-%d")
+    end_date = db.read(index="episode", query=end_episode_data)["hits"]["hits"][0]["_source"]["air_date"]
+    end_date = get_correct_date_format(end_date)
 
     return start_date, end_date

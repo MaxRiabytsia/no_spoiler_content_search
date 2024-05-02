@@ -1,20 +1,20 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
+import {useRoute} from "vue-router";
+import { useStore } from 'vuex';
 
 const lastWatchedEpisode = ref(null);
+const route = useRoute();
+const store = useStore();
 
 onMounted(() => {
-  // Simulating fetching the last watched episode data from a script
-  lastWatchedEpisode.value = {
-    title: 'S1E1: Winter Is Coming',
-    description: 'Eddard Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon. Viserys plans to wed his sister to a nomadic warlord in exchange for an army.',
-    imageUrl: 'got_s1e1.jpeg'
-  };
+  lastWatchedEpisode.value = route.query;
+  store.state.lastWatchedEpisode = route.query;
 });
 
 const getImgUrl = (pic) => {
-  return require('../assets/' + pic)
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
 
 </script>
@@ -25,10 +25,10 @@ const getImgUrl = (pic) => {
       <h3>Last Watched Episode:</h3>
       <div class="episode-info" v-if="lastWatchedEpisode">
         <div class="episode-image">
-          <img :src="getImgUrl(lastWatchedEpisode.imageUrl)" alt="Episode Image" />
+          <img :src="getImgUrl(lastWatchedEpisode.image_url)" alt="Episode Image" />
         </div>
         <div class="episode-details">
-          <h4>{{ lastWatchedEpisode.title }}</h4>
+          <h4>{{ lastWatchedEpisode.name }}</h4>
           <p>{{ lastWatchedEpisode.description }}</p>
         </div>
       </div>
@@ -42,7 +42,7 @@ const getImgUrl = (pic) => {
           </select>
         </div>
         <div class="search-bar">
-          <SearchBar @search="handleSearch"/>
+          <SearchBar route-name="content_results" />
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ def get_episode_data_query(episode_id: int) -> dict:
     return {
         "query": {
             "match": {
-                "id": episode_id
+                "external_id": episode_id
             }
         }
     }

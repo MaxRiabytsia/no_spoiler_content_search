@@ -15,9 +15,10 @@ class YoutubeAPI:
                       episode_id: id, limit: int = 50):
         # TODO: do I need this? do I need to add a timezone offset?
         # Convert min_release_date and max_release_date to ISO format
-        min_release_date_iso = (min_release_date - timedelta(
-            days=1)).isoformat() + 'Z'  # Subtract 1 day for timezone offset
-        max_release_date_iso = (max_release_date + timedelta(days=1)).isoformat() + 'Z'  # Add 1 day for timezone offset
+        min_release_date_iso = (min_release_date -
+                                timedelta(days=1)).isoformat(timespec='seconds') + 'Z'
+        max_release_date_iso = (max_release_date +
+                                timedelta(days=1)).isoformat(timespec='seconds') + 'Z'
 
         request = self._youtube.search().list(
             q=query,

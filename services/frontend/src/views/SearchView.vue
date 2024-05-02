@@ -5,7 +5,7 @@ import SearchBar from "@/components/SearchBar.vue";
 <template>
   <main>
     <h1>What show are you currently watching?</h1>
-    <SearchBar />
+    <SearchBar route-name="episodes" />
     <div class="how-it-works">
       <h2>How does this work?</h2>
       <div class="steps">
