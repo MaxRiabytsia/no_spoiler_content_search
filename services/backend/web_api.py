@@ -41,11 +41,13 @@ def get_show_data(title: str, background_tasks: BackgroundTasks):
     # if we have no info on the show or if we have only title,
     # we will get the data from the API
     if not show_hits or not show_hits[0]["_source"]["external_id"]:
+        print("Show not found in ES")
         show, episodes = shows_api.search(title)
         if show:
             background_tasks.add_task(db.write, data=[show])
             background_tasks.add_task(db.write, data=episodes)
     else:
+        print("Show found in ES")
         show_data = show_hits[0]["_source"]
         show = Show(**show_data)
         episode_query = get_episodes_by_show_id_query(show_data["external_id"])
@@ -66,8 +68,10 @@ def search_content(background_tasks: BackgroundTasks, query: str = Query(..., mi
     hits = response["hits"]["hits"]
 
     if hits:
+        print("Content found in ES")
         content_results = [Content(**hit["_source"]) for hit in hits]
     else:
+        print("Content not found in ES")
         content_results = youtube_api.search_videos(query, start_date, end_date, end_episode_id)
         if content_results:
             background_tasks.add_task(db.write, data=content_results)

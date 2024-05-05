@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
 import {useRoute} from "vue-router";
 import { useStore } from 'vuex';
@@ -16,6 +16,11 @@ onMounted(() => {
 const getImgUrl = (pic) => {
   return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
+
+const selectedRange = computed({
+  get: () => store.state.selectedRange,
+  set: (value) => store.commit('setSelectedRange', value),
+});
 
 </script>
 
@@ -37,8 +42,11 @@ const getImgUrl = (pic) => {
       <h1>What content are you looking for?</h1>
       <div class="search-bar-container">
         <div class="dropdown-container">
-          <select class="range-dropdown">
-            <option value="" selected>Episode range</option>
+          <select class="range-dropdown" v-model="selectedRange">
+            <option value="" class="default-option" selected>Episode range</option>
+            <option value="show_start">Show Start - This Episode</option>
+            <option value="season_start">Season Start - This Episode</option>
+            <option value="prev_ep">Previous Episode - This Episode</option>
           </select>
         </div>
         <div class="search-bar">
@@ -114,7 +122,6 @@ const getImgUrl = (pic) => {
 
 .range-dropdown {
   appearance: none;
-  color: rgba(255, 255, 255, 0.6);
   background-color: #222222;
   border: 2px solid #666666;
   padding: 0.5rem 2.5rem 0.5rem 1rem;
@@ -123,6 +130,10 @@ const getImgUrl = (pic) => {
   cursor: pointer;
   outline: none;
   height: 52px;
+}
+
+.default-option {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .dropdown-container::after {

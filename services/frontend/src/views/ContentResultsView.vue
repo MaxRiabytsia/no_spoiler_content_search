@@ -3,7 +3,7 @@ import {onMounted, ref} from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
 import axios from "axios";
 import {useRoute} from "vue-router";
-import { useStore } from 'vuex';
+import {useStore} from 'vuex';
 
 
 const videos = ref([]);
@@ -17,15 +17,34 @@ const searchInfo = ref({
 });
 
 onMounted(() => {
-  const searchQuery = route.query.q
-  axios.get(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=110413-110414`)
-    .then(response => {
-      console.log(response.data)
-      videos.value = response.data
-    })
-    .catch(error => {
-      console.error(error)
-    })
+  const searchQuery = searchInfo.value.show_title + " " + route.query.q
+
+  const end_id = store.state.lastWatchedEpisode.external_id
+  let start_id = null
+  const selectedRange = store.state.selectedRange
+  const season = store.state.lastWatchedEpisode.season
+
+  if (selectedRange === 'show_start') {
+    start_id = store.state.allEpisodes[0].external_id
+  } else if (selectedRange === 'prev_ep') {
+    start_id = store.state.allEpisodes.find(
+        episode => episode.number_in_show === store.state.lastWatchedEpisode.number_in_show - 1).external_id
+  } else if (selectedRange === 'season_start') {
+    start_id = store.state.allEpisodes.find(episode => episode.season === season &&
+        episode.number_in_season === 1).external_id
+  } else {
+    start_id = store.state.allEpisodes[0].external_id
+  }
+
+  console.log(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`)
+  axios.get(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`)
+      .then(response => {
+        console.log(response.data)
+        videos.value = response.data
+      })
+      .catch(error => {
+        console.error(error)
+      })
 })
 
 const getImgUrl = (pic) => {
@@ -39,10 +58,10 @@ const getImgUrl = (pic) => {
       <div class="show-info">
         <h2 class="show-name-title">TV Show:</h2>
         <p class="show-name">{{ searchInfo.show_title }}</p>
-        <img :src="searchInfo.show_image_url" alt="" class="show-poster" />
+        <img :src="searchInfo.show_image_url" alt="" class="show-poster"/>
         <p class="last-watched-episode-title">Last Watched Episode:</p>
         <p class="last-watched-episode">{{ searchInfo.episode_title }}</p>
-        <img :src="getImgUrl(searchInfo.episode_image_url)" alt="" class="show-poster" />
+        <img :src="getImgUrl(searchInfo.episode_image_url)" alt="" class="show-poster"/>
       </div>
       <div class="main-content">
         <div class="search-container">
@@ -52,18 +71,22 @@ const getImgUrl = (pic) => {
               <option value="1">Season 1</option>
             </select>
           </div>
-          <SearchBar route-name="content_results" />
+          <SearchBar route-name="content_results"/>
         </div>
         <div class="video-list">
           <div v-for="video in videos" :key="video.external_id" class="video-item">
-            <div class="thumbnail-container">
-              <img :src="getImgUrl(video.image_url)" :alt="video.title" class="thumbnail" />
-            </div>
-            <div class="video-info">
-              <h3 class="video-title">{{ video.title }}</h3>
-              <p class="video-views">{{ video.channel }}</p>
-              <p class="video-description">{{ video.description }}</p>
-            </div>
+            <a :href="video.url" class="video-url">
+              <div class="video-item-content">
+                <div class="thumbnail-container">
+                  <img :src="getImgUrl(video.image_url)" :alt="video.title" class="thumbnail"/>
+                </div>
+                <div class="video-info">
+                  <h3 class="video-title">{{ video.title }}</h3>
+                  <p class="video-views">{{ video.channel_name }}</p>
+                  <p class="video-description">{{ video.description }}</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <button class="load-more">Load more</button>
@@ -168,6 +191,15 @@ const getImgUrl = (pic) => {
 
 .video-description {
   font-size: 14px;
+}
+
+.video-url {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.video-item-content {
+  display: flex;
 }
 
 .load-more {

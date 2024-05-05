@@ -121,7 +121,7 @@ class Episode(ESBaseModel):
 
 @partial_model
 class Content(ESBaseModel):
-    external_id: int
+    external_id: str
     episode_external_id: int
     title: str
     channel_name: str
