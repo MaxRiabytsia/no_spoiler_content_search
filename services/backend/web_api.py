@@ -29,6 +29,7 @@ shows_api = ShowsAPI()
 @app.get("/search_suggestions")
 async def get_search_suggestions(query: str = Query(..., min_length=1)):
     suggestions = await db.get_suggestions(query, index='show', field='title')
+    suggestions = [Show(**suggestion["_source"]) for suggestion in suggestions]
     return suggestions
 
 

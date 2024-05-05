@@ -29,12 +29,8 @@ class Database:
                 }
             }
         )
-        print(response)
-        suggestions = [
-            option["text"] for option in response["suggest"]["suggestions"][0]["options"]
-        ]
-        print(suggestions)
 
+        suggestions = response["suggest"]["suggestions"][0]["options"]
         return suggestions
 
     def write(self, data: list[ESBaseModel]):
