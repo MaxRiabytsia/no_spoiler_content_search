@@ -1,9 +1,10 @@
 <script setup>
-import { ref, computed, defineProps } from "vue";
+import { ref, computed, defineProps, watch, nextTick } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter()
 const searchQuery = ref('');
+const suggestions = ref([]);
 
 const props = defineProps({
   routeName: {
@@ -11,6 +12,27 @@ const props = defineProps({
     required: true,
   },
 });
+
+
+const fetchSuggestions = async () => {
+  if (searchQuery.value.length > 0) {
+    const response = await fetch(`http://localhost:5000/search_suggestions?query=${encodeURIComponent(searchQuery.value)}`);
+    suggestions.value = await response.json();
+    await nextTick();
+    console.log(suggestions.value)
+  } else {
+    suggestions.value = [];
+  }
+};
+
+watch(searchQuery, fetchSuggestions);
+
+
+const selectSuggestion = (suggestion) => {
+  searchQuery.value = suggestion;
+  suggestions.value = [];
+  search();
+};
 
 const search = () => {
   router.push({ name: props.routeName, query: { q: searchQuery.value } })
@@ -35,6 +57,13 @@ const showClearButton = computed(() => {
     <button @click="search" class="search-button">
       <img src="@/assets/search-icon.png" alt="Search icon" />
     </button>
+    <div class="suggestions" v-show="suggestions.length > 0" :key="suggestions.join('-')">
+      <ul>
+        <li v-for="suggestion in suggestions" :key="suggestion" @click="selectSuggestion(suggestion)">
+          {{ suggestion }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

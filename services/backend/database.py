@@ -20,19 +20,20 @@ class Database:
             body={
                 "suggest": {
                     "suggestions": {
-                        "text": query,
+                        "prefix": query,
                         "completion": {
-                            "field": field,
+                            "field": f"{field}.suggest",
                             "size": number_of_suggestions
                         }
                     }
                 }
             }
         )
-
+        print(response)
         suggestions = [
             option["text"] for option in response["suggest"]["suggestions"][0]["options"]
         ]
+        print(suggestions)
 
         return suggestions
 
