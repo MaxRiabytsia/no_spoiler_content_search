@@ -12,7 +12,8 @@ show_mapping = {
                 "type": "text",
                 "fields": {
                     "suggest": {
-                        "type": "completion"
+                        "type": "completion",
+                        "analyzer": "simple"
                     }
                 }
             },
