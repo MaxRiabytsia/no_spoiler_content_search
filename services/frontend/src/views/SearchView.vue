@@ -5,7 +5,7 @@ import SearchBar from "@/components/SearchBar.vue";
 <template>
   <main>
     <h1>What show are you currently watching?</h1>
-    <SearchBar route-name="episodes" />
+    <SearchBar route-name="episodes" enable-autocomplete />
     <div class="how-it-works">
       <h2>How does this work?</h2>
       <div class="steps">

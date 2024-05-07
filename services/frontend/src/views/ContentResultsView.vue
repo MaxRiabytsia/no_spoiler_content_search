@@ -1,10 +1,9 @@
 <script setup>
-import {onMounted, ref} from 'vue';
+import { onMounted, ref } from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
 import axios from "axios";
-import {useRoute} from "vue-router";
-import {useStore} from 'vuex';
-
+import { useRoute } from "vue-router";
+import { useStore } from 'vuex';
 
 const videos = ref([]);
 const route = useRoute();
@@ -17,39 +16,42 @@ const searchInfo = ref({
 });
 
 onMounted(() => {
-  const searchQuery = searchInfo.value.show_title + " " + route.query.q
+  const searchQuery = searchInfo.value.show_title + " " + route.query.q;
 
-  const end_id = store.state.lastWatchedEpisode.external_id
-  let start_id = null
-  const selectedRange = store.state.selectedRange
-  const season = store.state.lastWatchedEpisode.season
+  const end_id = store.state.lastWatchedEpisode.external_id;
+  let start_id = null;
+  const selectedRange = store.state.selectedRange;
+  const season = store.state.lastWatchedEpisode.season;
 
   if (selectedRange === 'show_start') {
-    start_id = store.state.allEpisodes[0].external_id
+    start_id = store.state.allEpisodes[0].external_id;
   } else if (selectedRange === 'prev_ep') {
     start_id = store.state.allEpisodes.find(
-        episode => episode.number_in_show === store.state.lastWatchedEpisode.number_in_show - 1).external_id
+      episode => episode.number_in_show === store.state.lastWatchedEpisode.number_in_show - 1
+    ).external_id;
   } else if (selectedRange === 'season_start') {
-    start_id = store.state.allEpisodes.find(episode => episode.season === season &&
-        episode.number_in_season === 1).external_id
+    start_id = store.state.allEpisodes.find(
+      episode => episode.season === season && episode.number_in_season === 1
+    ).external_id;
   } else {
-    start_id = store.state.allEpisodes[0].external_id
+    start_id = store.state.allEpisodes[0].external_id;
   }
 
-  console.log(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`)
-  axios.get(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`)
-      .then(response => {
-        console.log(response.data)
-        videos.value = response.data
-      })
-      .catch(error => {
-        console.error(error)
-      })
-})
+  console.log(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`);
+  axios
+    .get(`http://localhost:5000/search_content?query=${searchQuery}&episode_range=${start_id}-${end_id}`)
+    .then(response => {
+      console.log(response.data);
+      videos.value = response.data;
+    })
+    .catch(error => {
+      console.error(error);
+    });
+});
 
 const getImgUrl = (pic) => {
   return pic.startsWith("http") ? pic : require('../assets/' + pic);
-}
+};
 </script>
 
 <template>
@@ -81,19 +83,19 @@ const getImgUrl = (pic) => {
                   <img :src="getImgUrl(video.image_url)" :alt="video.title" class="thumbnail"/>
                 </div>
                 <div class="video-info">
-                  <h3 class="video-title">{{ video.title }}</h3>
+                  <h3 class="video-title"><span v-html="video.title"></span></h3>
                   <p class="video-views">{{ video.channel_name }}</p>
-                  <p class="video-description">{{ video.description }}</p>
+                  <p class="video-description"><span v-html="video.description"></span></p>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <button class="load-more">Load more</button>
       </div>
     </div>
   </div>
 </template>
+
 <style scoped>
 .no-spoiler-search {
   padding: 20px 200px 0 200px;

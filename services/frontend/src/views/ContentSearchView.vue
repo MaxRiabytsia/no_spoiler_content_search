@@ -118,6 +118,7 @@ const selectedRange = computed({
   position: relative;
   display: inline-block;
   margin-right: 10px;
+  color: #FFFFFF;
 }
 
 .range-dropdown {
@@ -130,6 +131,7 @@ const selectedRange = computed({
   cursor: pointer;
   outline: none;
   height: 52px;
+  color: #FFFFFF;
 }
 
 .default-option {

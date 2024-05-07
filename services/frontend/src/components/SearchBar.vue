@@ -11,11 +11,15 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  enableAutocomplete: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 
 const fetchSuggestions = async () => {
-  if (searchQuery.value.length > 0) {
+  if (props.enableAutocomplete && searchQuery.value.length > 0) {
     const response = await fetch(`http://localhost:5000/search_suggestions?query=${encodeURIComponent(searchQuery.value)}`);
     suggestions.value = await response.json();
     await nextTick();
