@@ -44,7 +44,8 @@ class ShowsAPI:
                 episodes.append(episode)
                 episode_number_in_show += 1
 
-            episodes[-1].next_episode_air_date = air_date
+            if episodes:
+                episodes[-1].next_episode_air_date = air_date
 
         return episodes
 

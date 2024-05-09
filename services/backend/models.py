@@ -58,8 +58,8 @@ class Show(ESBaseModel):
             'description': self.description,
             'image_url': self.image_url,
             'is_airing': self.is_airing,
-            'created_at': self.created_at.isoformat(),
-            'updated_at': self.updated_at.isoformat()
+            'created_at': self.created_at.isoformat() if self.created_at else datetime.now().isoformat(),
+            'updated_at': self.updated_at.isoformat() if self.updated_at else datetime.now().isoformat()
         }
 
 
@@ -114,8 +114,8 @@ class Episode(ESBaseModel):
             'image_url': self.image_url,
             'air_date': self.air_date.isoformat(),
             'next_episode_air_date': self.next_episode_air_date.isoformat() if self.next_episode_air_date else None,
-            'created_at': self.created_at.isoformat(),
-            'updated_at': self.updated_at.isoformat()
+            'created_at': self.created_at.isoformat() if self.created_at else datetime.now().isoformat(),
+            'updated_at': self.updated_at.isoformat() if self.updated_at else datetime.now().isoformat()
         }
 
 

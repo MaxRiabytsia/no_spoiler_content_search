@@ -22,6 +22,10 @@ const fetchSuggestions = async () => {
   if (props.enableAutocomplete && searchQuery.value.length > 0) {
     const response = await fetch(`http://localhost:5000/search_suggestions?query=${encodeURIComponent(searchQuery.value)}`);
     suggestions.value = await response.json();
+    // Remove duplicate names from suggestions
+    suggestions.value = [...new Set(suggestions.value.map(suggestion => suggestion.title))].map(title => suggestions.value.find(suggestion => suggestion.title === title));
+    // Sort suggestions to show items with images first
+    suggestions.value.sort((a, b) => (b.image_url ? 1 : 0) - (a.image_url ? 1 : 0));
     await nextTick();
     console.log(suggestions.value)
   } else {
@@ -49,7 +53,11 @@ const clearSearch = () => {
 const showClearButton = computed(() => {
   return searchQuery.value.length > 0;
 });
-</script>a
+
+function getImgUrl(pic) {
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
+}
+</script>
 
 <template>
   <div class="search-bar">
@@ -64,7 +72,7 @@ const showClearButton = computed(() => {
     <div class="suggestions" v-show="suggestions.length > 0" :key="suggestions.join('-')">
       <ul>
         <li v-for="suggestion in suggestions" :key="suggestion.title" @click="selectSuggestion(suggestion)">
-          <img :src="suggestion.image_url" :alt="suggestion.title" />
+          <img :src="suggestion.image_url || getImgUrl('no_img.jpg')" :alt="suggestion.title" />
           <span>{{ suggestion.title }}</span>
         </li>
       </ul>
