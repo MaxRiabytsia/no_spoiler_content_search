@@ -49,9 +49,13 @@ onMounted(() => {
     });
 });
 
-const getImgUrl = (pic) => {
+function getImgUrl(pic) {
+  if (!pic) {
+    return require('../assets/no_img.jpg');
+  }
+
   return pic.startsWith("http") ? pic : require('../assets/' + pic);
-};
+}
 </script>
 
 <template>

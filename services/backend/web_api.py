@@ -64,18 +64,10 @@ def search_content(background_tasks: BackgroundTasks, query: str = Query(..., mi
                    episode_range: str = Query(..., regex="^\\d+-\\d+$")):
     start_episode_id, end_episode_id = map(int, episode_range.split("-"))
     start_date, end_date = get_start_and_end_dates(start_episode_id, end_episode_id)
-    es_query = get_content_query(query, start_date, end_date)
-    response = db.read(index="content", query=es_query)
-    hits = response["hits"]["hits"]
 
-    if hits:
-        print("Content found in ES")
-        content_results = [Content(**hit["_source"]) for hit in hits]
-    else:
-        print("Content not found in ES")
-        content_results = youtube_api.search_videos(query, start_date, end_date, end_episode_id)
-        if content_results:
-            background_tasks.add_task(db.write, data=content_results)
+    content_results = youtube_api.search_videos(query, start_date, end_date, end_episode_id)
+    if content_results:
+        background_tasks.add_task(db.write, data=content_results)
 
     return content_results
 

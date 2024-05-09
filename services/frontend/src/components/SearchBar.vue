@@ -22,10 +22,13 @@ const fetchSuggestions = async () => {
   if (props.enableAutocomplete && searchQuery.value.length > 0) {
     const response = await fetch(`http://localhost:5000/search_suggestions?query=${encodeURIComponent(searchQuery.value)}`);
     suggestions.value = await response.json();
-    // Remove duplicate names from suggestions
-    suggestions.value = [...new Set(suggestions.value.map(suggestion => suggestion.title))].map(title => suggestions.value.find(suggestion => suggestion.title === title));
     // Sort suggestions to show items with images first
     suggestions.value.sort((a, b) => (b.image_url ? 1 : 0) - (a.image_url ? 1 : 0));
+    // Remove duplicate names from suggestions
+    suggestions.value = [...new Set(suggestions.value.map(suggestion => suggestion.title))].map(title => suggestions.value.find(suggestion => suggestion.title === title));
+    // take first 5 suggestions
+    let last_suggestion_number = suggestions.value.length < 5 ? suggestions.value.length : 5;
+    suggestions.value = suggestions.value.slice(0, last_suggestion_number);
     await nextTick();
     console.log(suggestions.value)
   } else {
@@ -55,6 +58,10 @@ const showClearButton = computed(() => {
 });
 
 function getImgUrl(pic) {
+  if (!pic) {
+    return require('../assets/no_img.jpg');
+  }
+
   return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
 </script>

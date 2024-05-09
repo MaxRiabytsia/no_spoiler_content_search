@@ -2,7 +2,6 @@ from elasticsearch import Elasticsearch, helpers
 
 from models import ESBaseModel
 
-
 url = "http://elasticsearch:9200"
 
 
@@ -14,7 +13,7 @@ class Database:
     def read(self, query: dict, index: str):
         return self._es.search(index=index, body=query)
 
-    async def get_suggestions(self, query: str, index: str, field: str, number_of_suggestions: int = 5):
+    async def get_suggestions(self, query: str, index: str, field: str, number_of_suggestions: int = 50):
         response = self._es.search(
             index=index,
             body={
