@@ -53,9 +53,9 @@ class ShowsAPI:
         since = int(timestamp.timestamp()) if timestamp else None
         return self._tvdb.get_updates(since=since, type="series", action="update")
 
-    def get_n_most_popular_shows(self, n: int) -> list[int]:
+    def get_most_popular_shows(self, start: int, end: int) -> list[int]:
         df = pd.read_csv("data_processing/initial_data/shows.csv", encoding="utf-8")
-        return df["name"].head(n).tolist()
+        return df["name"].iloc[start:end].tolist()
 
 
 if __name__ == "__main__":
