@@ -50,7 +50,8 @@ class ShowsAPI:
         return episodes
 
     def get_updates_since_timestamp(self, timestamp: datetime | None) -> list[dict]:
-        since = int(timestamp.timestamp()) if timestamp else None
+        three_months_ago = datetime.now().timestamp() - 60 * 60 * 24 * 30 * 3 + 1
+        since = int(timestamp.timestamp()) if timestamp else int(three_months_ago)
         return self._tvdb.get_updates(since=since, type="series", action="update")
 
     def get_most_popular_shows(self, start: int, end: int) -> list[int]:

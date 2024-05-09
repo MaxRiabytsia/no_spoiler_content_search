@@ -48,7 +48,18 @@ episode_mapping = {
     }
 }
 
+pipeline_mapping = {
+    "mappings": {
+        "properties": {
+            "id": {"type": "keyword"},
+            "name": {"type": "keyword"},
+            "last_run_timestamp": {"type": "date"},
+        }
+    }
+}
+
 
 # Create indices with mappings
 es.indices.create(index="show", body=show_mapping)
 es.indices.create(index="episode", body=episode_mapping)
+es.indices.create(index="pipeline", body=pipeline_mapping)
