@@ -5,13 +5,13 @@ from data_processing.queries import get_airing_show_ids_query, get_last_update_t
 
 def get_airing_show_ids(db):
     query = get_airing_show_ids_query()
-    res = db.read(query)
+    res = db.read(query, "show")
     return [hit["_source"]["external_id"] for hit in res["hits"]["hits"]]
 
 
 def get_last_update_timestamp(db):
     query = get_last_update_timestamp_query()
-    res = db.read(query)
+    res = db.read(query, "pipeline")
 
     if len(res["hits"]["hits"]) > 0:
         last_run_timestamp = res["hits"]["hits"][0]["_source"]["last_run_timestamp"]
@@ -32,6 +32,7 @@ def main():
     for show in updated_shows:
         if show["recordId"] in ids:
             show = api.get_show_by_id(show["recordId"])
+            print(f"Updating show {show.name}...")
             episodes = api.get_episodes_by_show_id(show.external_id)
             db.write([show])
             db.write(episodes)

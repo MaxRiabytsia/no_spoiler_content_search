@@ -12,7 +12,8 @@ show_mapping = {
                 "type": "text",
                 "fields": {
                     "suggest": {
-                        "type": "completion"
+                        "type": "completion",
+                        "analyzer": "simple"
                     }
                 }
             },
@@ -47,24 +48,6 @@ episode_mapping = {
     }
 }
 
-# Mappings for 'content' index
-content_mapping = {
-    "mappings": {
-        "properties": {
-            "external_id": {"type": "keyword"},
-            "episode_id": {"type": "keyword"},
-            "title": {"type": "text"},
-            "channel_name": {"type": "text"},
-            "description": {"type": "text"},
-            "url": {"type": "keyword"},
-            "image_url": {"type": "keyword"},
-            "published_date": {"type": "date"},
-            "created_at": {"type": "date"},
-            "updated_at": {"type": "date"},
-        }
-    }
-}
-
 pipeline_mapping = {
     "mappings": {
         "properties": {
@@ -75,8 +58,8 @@ pipeline_mapping = {
     }
 }
 
+
 # Create indices with mappings
 es.indices.create(index="show", body=show_mapping)
 es.indices.create(index="episode", body=episode_mapping)
-es.indices.create(index="content", body=content_mapping)
 es.indices.create(index="pipeline", body=pipeline_mapping)

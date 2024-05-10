@@ -6,16 +6,16 @@ NUMBER_OF_SHOWS_WITH_INFO = 1_000
 NUMBER_OF_SHOWS_WITH_NAME_ONLY = 50_000
 
 
-def get_n_most_popular_show_info(api, n, name_only=False):
+def get_n_most_popular_show_info(api, start, end, name_only=False):
     shows = []
-    episodes = []
-    for i, show_name in enumerate(api.get_n_most_popular_shows(n)):
-        test_shows = ['Game of Thrones', 'Squid Game', 'Breaking Bad', 'The Office',
-                      'Friends', 'Better Call Saul', "The Queen's Gambit"]
-        if show_name not in test_shows:
+    all_episodes = []
+    names = set()
+    for i, show_name in enumerate(api.get_most_popular_shows(start, end)):
+        if show_name in names:
             continue
+        names.add(show_name)
 
-        print(f"Saving {'name' if name_only else 'info'} for show {i + 1}/{n}: {show_name}")
+        print(f"Saving {'name' if name_only else 'info'} for show {start + i + 1}/{end}: {show_name}")
         if name_only:
             show = Show(title=show_name)
             shows.append(show)
@@ -24,32 +24,32 @@ def get_n_most_popular_show_info(api, n, name_only=False):
             if show:
                 shows.append(show)
             if episodes:
-                episodes += episodes
+                all_episodes += episodes
 
-    return shows, episodes
+    return shows, all_episodes
 
 
 def main():
     # api = ShowsAPI()
-    # shows, episodes = get_n_most_popular_show_info(api, NUMBER_OF_SHOWS_WITH_INFO)
-    # name_only_shows, _ = get_n_most_popular_show_info(api, NUMBER_OF_SHOWS_WITH_NAME_ONLY, name_only=True)
-    # shows += name_only_shows
+    # shows, episodes = get_n_most_popular_show_info(api, 500, NUMBER_OF_SHOWS_WITH_INFO)
+    # # name_only_shows, _ = get_n_most_popular_show_info(api, 20_000, NUMBER_OF_SHOWS_WITH_NAME_ONLY, name_only=True)
+    # # shows += name_only_shows
     #
     # # save data to file
     # import json
-    # with open('show_data.json', 'w') as f:
+    # with open('show_data5-10.json', 'w') as f:
     #     json.dump([show.dict() for show in shows], f, default=str)
     #
-    # with open('episode_data.json', 'w') as f:
+    # with open('episode_data5-10.json', 'w') as f:
     #     json.dump([episode.dict() for episode in episodes], f, default=str)
 
     # read data from file
     import json
     from models import Show, Episode
-    with open('show_data.json', 'r') as f:
+    with open('show_data5-10.json', 'r') as f:
         shows = [Show(**show) for show in json.load(f)]
 
-    with open('episode_data.json', 'r') as f:
+    with open('episode_data5-10.json', 'r') as f:
         episodes = [Episode(**episode) for episode in json.load(f)]
 
     db = Database()

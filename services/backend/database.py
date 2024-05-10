@@ -2,23 +2,26 @@ from elasticsearch import Elasticsearch, helpers
 
 from models import ESBaseModel
 
+url = "http://localhost:9200"
+
 
 class Database:
     def __init__(self):
-        self._es = Elasticsearch(['http://localhost:9200'])
+        self._es = Elasticsearch([url])
+        print(self._es.ping())
 
     def read(self, query: dict, index: str):
         return self._es.search(index=index, body=query)
 
-    async def get_suggestions(self, query: str, index: str, field: str, number_of_suggestions: int = 5):
+    async def get_suggestions(self, query: str, index: str, field: str, number_of_suggestions: int = 50):
         response = self._es.search(
             index=index,
             body={
                 "suggest": {
                     "suggestions": {
-                        "text": query,
+                        "prefix": query,
                         "completion": {
-                            "field": field,
+                            "field": f"{field}.suggest",
                             "size": number_of_suggestions
                         }
                     }
@@ -26,10 +29,7 @@ class Database:
             }
         )
 
-        suggestions = [
-            option["text"] for option in response["suggest"]["suggestions"][0]["options"]
-        ]
-
+        suggestions = response["suggest"]["suggestions"][0]["options"]
         return suggestions
 
     def write(self, data: list[ESBaseModel]):
@@ -41,15 +41,14 @@ class Database:
 
 
 if __name__ == "__main__":
-    # Example usage:
+    url = "http://localhost:9200"
     db = Database()
     query = {
         "query": {
-            "match": {
-                "title": "game of thrones"
-            }
-        }
+            "match_all": {}
+        },
+        "size": 100,
+        "_source": ["external_id", "name"]
     }
-    response = db.read(query, "show")
+    response = db.read(query, "episode")
     print(response)
-

@@ -1,91 +1,61 @@
-<script>
-export default {
-  data() {
-    return {
-      showData: {
-        title: 'Game of Thrones',
-        description: 'Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.',
-        imageUrl: 'https://cdn.europosters.eu/image/1300/art-photo/game-of-thrones-season-1-key-art-i135455.jpg',
-        seasons: [
-          {id: 1, name: 'Season 1'},
-          {id: 2, name: 'Season 2'},
-        ],
-      },
-      selectedSeason: 1,
-      episodes: [],
-      selectedEpisodeId: null,
-    };
-  },
-  created() {
-    this.fetchEpisodes();
-  },
-  methods: {
-    fetchEpisodes() {
-      this.episodes = [
-        {
-          id: 1,
-          title: 'Episode 1: Winter Is Coming',
-          description: 'Eddard Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon. Viserys plans to wed his sister to a ...',
-          imageUrl: 'got_s1e1.jpeg',
-        },
-        {
-          id: 2,
-          title: 'Episode 2: The Kingsroad',
-          description: 'While Bran recovers from his fall, Ned takes only his daughters to King\'s Landing. Jon Snow goes with his uncle Benjen to the Wall. Tyrion joins them.',
-          imageUrl: 'got_s1e2.jpeg',
-        },
-        {
-          id: 3,
-          title: 'Episode 3: Lord Snow',
-          description: 'Jon begins his training with the Night\'s Watch; Ned confronts his past and future at King\'s Landing; Daenerys finds herself at odds with Viserys.',
-          imageUrl: 'got_s1e3.jpeg',
-        },
-        {
-          id: 4,
-          title: 'Episode 4: Cripples, Bastards, and Broken Things',
-          description: 'Eddard investigates Jon Arryn\'s murder. Jon befriends Samwell Tarly, a coward who has come to join the Night\'s Watch.',
-          imageUrl: 'got_s1e4.jpeg',
-        },
-        {
-          id: 5,
-          title: 'Episode 1: Winter Is Coming',
-          description: 'Eddard Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon. Viserys plans to wed his sister to a ...',
-          imageUrl: 'got_s1e1.jpeg',
-        },
-        {
-          id: 6,
-          title: 'Episode 2: The Kingsroad',
-          description: 'While Bran recovers from his fall, Ned takes only his daughters to King\'s Landing. Jon Snow goes with his uncle Benjen to the Wall. Tyrion joins them.',
-          imageUrl: 'got_s1e2.jpeg',
-        },
-        {
-          id: 7,
-          title: 'Episode 3: Lord Snow',
-          description: 'Jon begins his training with the Night\'s Watch; Ned confronts his past and future at King\'s Landing; Daenerys finds herself at odds with Viserys.',
-          imageUrl: 'got_s1e3.jpeg',
-        },
-        {
-          id: 8,
-          title: 'Episode 4: Cripples, Bastards, and Broken Things',
-          description: 'Eddard investigates Jon Arryn\'s murder. Jon befriends Samwell Tarly, a coward who has come to join the Night\'s Watch.',
-          imageUrl: 'got_s1e4.jpeg',
-        },
-      ];
-    },
-    selectEpisode(episodeId) {
-      this.selectedEpisodeId = episodeId;
-    },
-    getImgUrl(pic) {
-      return require('../assets/' + pic)
-    }
+<script setup>
+import { ref, onMounted, computed } from 'vue';
+import { useRoute } from 'vue-router'
+import axios from 'axios'
+import router from "@/router";
+import { useStore } from 'vuex';
+
+
+const route = useRoute();
+const showData = ref({});
+const allEpisodes = ref([]);
+const selectedSeason = ref(1);
+const selectedEpisodeId = ref(null);
+const selectedEpisode = ref(null);
+const store = useStore();
+
+const episodes = computed(() => {
+  return allEpisodes.value.filter(episode => episode.season === selectedSeason.value);
+});
+
+const seasonCount = computed(() => {
+  return allEpisodes.value.length > 0 ? Math.max(...allEpisodes.value.map(episode => episode.season)) : 1;
+});
+
+onMounted(() => {
+  const searchQuery = route.query.q
+  axios.get(`http://localhost:5000/show_data?title=${searchQuery}`)
+    .then(response => {
+      console.log(response.data)
+      showData.value = response.data[0]
+      allEpisodes.value = response.data[1]
+      store.state.showData = response.data[0];
+      store.state.allEpisodes = response.data[1];
+    })
+    .catch(error => {
+      console.error(error)
+    })
+})
+
+function selectEpisode(episode) {
+  selectedEpisodeId.value = episode.external_id;
+  selectedEpisode.value = episode;
+  router.push({ name: 'episode', query: episode });
+}
+
+function getImgUrl(pic) {
+  if (!pic) {
+    return require('../assets/no_img.jpg');
   }
-};
+
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
+}
 </script>
 
 <template>
   <div class="episodes-view">
     <div class="show-info">
-      <img :src="showData.imageUrl" :alt="showData.title" class="show-poster"/>
+      <img :src="showData.image_url" :alt="showData.title" class="show-poster"/>
       <div class="show-details">
         <h2>{{ showData.title }}</h2>
         <p>{{ showData.description }}</p>
@@ -94,23 +64,23 @@ export default {
     <h1>What was the last episode you have seen?</h1>
     <div class="last-episode">
       <div class="dropdown-container">
-        <select v-model="selectedSeason" @change="fetchEpisodes" class="season-dropdown">
-          <option v-for="season in showData.seasons" :key="season.id" :value="season.id">
-            {{ season.name }}
+        <select v-model="selectedSeason" class="season-dropdown">
+          <option v-for="n in seasonCount" :key="n" :value="n">
+            Season {{ n }}
           </option>
         </select>
       </div>
       <div class="episodes">
         <div
             v-for="episode in episodes"
-            :key="episode.id"
+            :key="episode.external_id"
             class="episode-card"
-            :class="{ selected: episode.id === selectedEpisodeId }"
-            @click="selectEpisode(episode.id)"
+            :class="{ selected: episode.external_id === selectedEpisodeId }"
+            @click="selectEpisode(episode)"
         >
-          <img :src="getImgUrl(episode.imageUrl)" :alt="episode.title" class="episode-thumbnail"/>
+          <img :src="getImgUrl(episode.image_url)" :alt="episode.title" class="episode-thumbnail"/>
           <div class="episode-details">
-            <h4>{{ episode.title }}</h4>
+            <h4>{{ episode.name }}</h4>
             <p>{{ episode.description }}</p>
           </div>
         </div>
@@ -119,7 +89,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .episodes-view {
   display: flex;
   flex-direction: column;

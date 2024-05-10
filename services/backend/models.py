@@ -41,11 +41,11 @@ class Show(ESBaseModel):
     @classmethod
     def from_api_object(cls, api_object):
         return cls(
-            external_id=api_object["tvdb_id"],
-            title=api_object["name"],
-            description=api_object["overview"],
-            image_url=api_object["thumbnail"],
-            is_airing=api_object["status"] == "Continuing",
+            external_id=api_object.get("tvdb_id"),
+            title=api_object.get("name"),
+            description=api_object.get("overview"),
+            image_url=api_object.get("thumbnail"),
+            is_airing=api_object.get("status") == "Continuing",
             created_at=datetime.now(),
             updated_at=datetime.now()
         )
@@ -58,8 +58,8 @@ class Show(ESBaseModel):
             'description': self.description,
             'image_url': self.image_url,
             'is_airing': self.is_airing,
-            'created_at': self.created_at.isoformat(),
-            'updated_at': self.updated_at.isoformat()
+            'created_at': self.created_at.isoformat() if self.created_at else datetime.now().isoformat(),
+            'updated_at': self.updated_at.isoformat() if self.updated_at else datetime.now().isoformat()
         }
 
 
@@ -83,17 +83,17 @@ class Episode(ESBaseModel):
     @classmethod
     def from_api_object(cls, api_object: dict, show_external_id: int, number_in_show: int, next_episode_air_date: str = None):
         return cls(
-            external_id=api_object["id"],
-            name=api_object["name"],
+            external_id=api_object.get("id"),
+            name=api_object.get("name"),
             show_external_id=show_external_id,
-            season=api_object["seasonNumber"],
-            number_in_season=api_object["number"],
+            season=api_object.get("seasonNumber"),
+            number_in_season=api_object.get("number"),
             number_in_show=number_in_show,
-            is_last_of_the_season=api_object["finaleType"] == "season",
-            is_last_of_the_show=api_object["finaleType"] == "series",
-            description=api_object["overview"],
-            image_url=api_object["image"],
-            air_date=datetime.strptime(api_object["aired"], "%Y-%m-%d"),
+            is_last_of_the_season=api_object.get("finaleType") == "season",
+            is_last_of_the_show=api_object.get("finaleType") == "series",
+            description=api_object.get("overview"),
+            image_url=api_object.get("image"),
+            air_date=datetime.strptime(api_object.get("aired"), "%Y-%m-%d"),
             next_episode_air_date=datetime.strptime(next_episode_air_date, "%Y-%m-%d") if next_episode_air_date else None,
             created_at=datetime.now(),
             updated_at=datetime.now()
@@ -114,14 +114,14 @@ class Episode(ESBaseModel):
             'image_url': self.image_url,
             'air_date': self.air_date.isoformat(),
             'next_episode_air_date': self.next_episode_air_date.isoformat() if self.next_episode_air_date else None,
-            'created_at': self.created_at.isoformat(),
-            'updated_at': self.updated_at.isoformat()
+            'created_at': self.created_at.isoformat() if self.created_at else datetime.now().isoformat(),
+            'updated_at': self.updated_at.isoformat() if self.updated_at else datetime.now().isoformat()
         }
 
 
 @partial_model
 class Content(ESBaseModel):
-    external_id: int
+    external_id: str
     episode_external_id: int
     title: str
     channel_name: str
@@ -135,14 +135,14 @@ class Content(ESBaseModel):
     @classmethod
     def from_youtube_api_object(cls, youtube_api_object: dict, episode_external_id: str):
         return cls(
-            external_id=youtube_api_object["id"]["videoId"],
+            external_id=youtube_api_object.get("id")["videoId"],
             episode_external_id=episode_external_id,
-            title=youtube_api_object["snippet"]["title"],
-            channel_name=youtube_api_object["snippet"]["channelTitle"],
-            description=youtube_api_object["snippet"]["description"],
-            url=f"https://www.youtube.com/watch?v={youtube_api_object['id']['videoId']}",
-            image_url=youtube_api_object["snippet"]["thumbnails"]["high"]["url"],
-            published_date=datetime.strptime(youtube_api_object["snippet"]["publishedAt"], "%Y-%m-%dT%H:%M:%SZ"),
+            title=youtube_api_object.get("snippet")["title"],
+            channel_name=youtube_api_object.get("snippet")["channelTitle"],
+            description=youtube_api_object.get("snippet")["description"],
+            url=f"https://www.youtube.com/watch?v={youtube_api_object.get('id')['videoId']}",
+            image_url=youtube_api_object.get("snippet")["thumbnails"]["high"]["url"],
+            published_date=datetime.strptime(youtube_api_object.get("snippet")["publishedAt"], "%Y-%m-%dT%H:%M:%SZ"),
             created_at=datetime.now(),
             updated_at=datetime.now()
         )

@@ -1,21 +1,30 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import SearchBar from "@/components/SearchBar.vue";
+import {useRoute} from "vue-router";
+import { useStore } from 'vuex';
 
 const lastWatchedEpisode = ref(null);
+const route = useRoute();
+const store = useStore();
 
 onMounted(() => {
-  // Simulating fetching the last watched episode data from a script
-  lastWatchedEpisode.value = {
-    title: 'S1E1: Winter Is Coming',
-    description: 'Eddard Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon. Viserys plans to wed his sister to a nomadic warlord in exchange for an army.',
-    imageUrl: 'got_s1e1.jpeg'
-  };
+  lastWatchedEpisode.value = route.query;
+  store.state.lastWatchedEpisode = route.query;
 });
 
-const getImgUrl = (pic) => {
-  return require('../assets/' + pic)
+function getImgUrl(pic) {
+  if (!pic) {
+    return require('../assets/no_img.jpg');
+  }
+
+  return pic.startsWith("http") ? pic : require('../assets/' + pic);
 }
+
+const selectedRange = computed({
+  get: () => store.state.selectedRange,
+  set: (value) => store.commit('setSelectedRange', value),
+});
 
 </script>
 
@@ -25,10 +34,10 @@ const getImgUrl = (pic) => {
       <h3>Last Watched Episode:</h3>
       <div class="episode-info" v-if="lastWatchedEpisode">
         <div class="episode-image">
-          <img :src="getImgUrl(lastWatchedEpisode.imageUrl)" alt="Episode Image" />
+          <img :src="getImgUrl(lastWatchedEpisode.image_url)" alt="Episode Image" />
         </div>
         <div class="episode-details">
-          <h4>{{ lastWatchedEpisode.title }}</h4>
+          <h4>{{ lastWatchedEpisode.name }}</h4>
           <p>{{ lastWatchedEpisode.description }}</p>
         </div>
       </div>
@@ -37,12 +46,15 @@ const getImgUrl = (pic) => {
       <h1>What content are you looking for?</h1>
       <div class="search-bar-container">
         <div class="dropdown-container">
-          <select class="range-dropdown">
-            <option value="" selected>Episode range</option>
+          <select class="range-dropdown" v-model="selectedRange">
+            <option value="" class="default-option" selected>Episode range</option>
+            <option value="show_start">Show Start - This Episode</option>
+            <option value="season_start">Season Start - This Episode</option>
+            <option value="prev_ep">Previous Episode - This Episode</option>
           </select>
         </div>
         <div class="search-bar">
-          <SearchBar @search="handleSearch"/>
+          <SearchBar route-name="content_results" />
         </div>
       </div>
     </div>
@@ -110,11 +122,11 @@ const getImgUrl = (pic) => {
   position: relative;
   display: inline-block;
   margin-right: 10px;
+  color: #FFFFFF;
 }
 
 .range-dropdown {
   appearance: none;
-  color: rgba(255, 255, 255, 0.6);
   background-color: #222222;
   border: 2px solid #666666;
   padding: 0.5rem 2.5rem 0.5rem 1rem;
@@ -123,6 +135,11 @@ const getImgUrl = (pic) => {
   cursor: pointer;
   outline: none;
   height: 52px;
+  color: #FFFFFF;
+}
+
+.default-option {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .dropdown-container::after {
