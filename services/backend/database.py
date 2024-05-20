@@ -33,11 +33,30 @@ class Database:
         return suggestions
 
     def write(self, data: list[ESBaseModel]):
-        def yeild_data():
-            for item in data:
+        def yeild_data(data1):
+            for item in data1:
                 yield item.to_es_loadable_object()
 
-        helpers.bulk(self._es, yeild_data())
+        print("Writing data to ES")
+        helpers.bulk(self._es, yeild_data(data))
+
+    def delete(self, show_title: str):
+        # delete by perfect match (not fuzzy)
+        self._es.delete_by_query(index="show", body={"query": {"match_phrase": {"title": show_title}}})
+
+    def _save_all_db_data_to_file(self):
+        import json
+        from datetime import datetime
+        from pathlib import Path
+
+        data = self.read({"query": {"match_all": {}}, "size": 1000}, "show")
+        data = data["hits"]["hits"]
+        data = [item["_source"] for item in data]
+        data = json.dumps(data, indent=4)
+        file_path = Path(f"db_data_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json")
+        with open(file_path, "w") as file:
+            file.write(data)
+        print(f"Data saved to {file_path}")
 
 
 if __name__ == "__main__":
